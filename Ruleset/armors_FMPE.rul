@@ -96,6 +96,7 @@
   - delete: STR_TANK_ARMOR
   - delete: STR_HOVERTANK_ARMOR
   - delete: STR_SECTOPOD_LASER_ARMOR
+  - delete: STR_SECTOPOD_PLASMA_ARMOR
   - type: STR_OBLITERATOR_ARMOR
     spriteSheet: OBLITERATOR.PCK
     spriteInv: inventory_OBLITERATOR
@@ -5398,10 +5399,6 @@
       - INV_NULL_4X2_BELT
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 92, 89, 90, 91 ]
-
-    
-#### PICK UP FROM HERE ####
-
   - type: STR_SECTOPOD_PLASMA_ARMOR
     spriteSheet: TANK3.PCK
     spriteInv: inventory_X_SECTOPOD_PLASMA
