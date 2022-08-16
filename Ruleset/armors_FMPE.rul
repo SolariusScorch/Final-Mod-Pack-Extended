@@ -12,26 +12,26 @@
   - delete: STR_MALE_CIVILIAN7_ARMOR
   - delete: STR_FEMALE_CIVILIAN2_ARMOR
   - delete: STR_FEMALE_CIVILIAN3_ARMOR
-  - delete: STR_MIB_ARMOR4
-  - delete: STR_MIB_ARMOR5
+  - delete: STR_MIB_POWER_SUIT
+  - delete: STR_MIB_STORMTROOPER_ARMOR
   - delete: STR_MIB_PSI_OPS_ARMOR
   - delete: STR_MIB_SECTOPOD_ARMOR
   - delete: STR_CYBERDISC_ARMOR
   - delete: STR_MUTON_LEADER_ARMOR
   - delete: STR_MUTON_ARMOR_MEDIC
   - delete: STR_MUTON_SHADER_ARMOR
-  - delete: STR_SECTOID_ARMOR0
-  - delete: STR_SECTOID_ARMOR2
+  - delete: STR_SECTOID_STANDARD_ARMOR
+  - delete: STR_SECTOID_COMMANDER_ARMOR
   - delete: STR_SECTOID_ARMOR_HEAVY
-  - delete: STR_FLOATER_ARMOR0
+  - delete: STR_FLOATER_SOLDIER_ARMOR
   - delete: STR_FLOATER_ARMOR_GREEN
   - delete: STR_FLOATER_ARMOR_BLUE
   - delete: STR_FLOATER_ARMOR_WHITE
-  - delete: STR_SNAKEMAN_ARMOR0
+  - delete: STR_SNAKEMAN_SOLDIER_ARMOR
   - delete: STR_SNAKEMAN_ARMOR_GREEN
   - delete: STR_SNAKEMAN_ARMOR_BLUE
-  - delete: STR_SNAKEMAN_ARMOR1
-  - delete: STR_SNAKEMAN_ARMOR2
+  - delete: STR_SNAKEMAN_LEADER_ARMOR
+  - delete: STR_SNAKEMAN_COMMANDER_ARMOR
   - delete: STR_NONE_UC
   - delete: STR_PERSONAL_ARMOR_UC
   - delete: STR_SYNTHSUIT_UC
@@ -41,9 +41,9 @@
   - delete: STR_DOGE_ARMOR
   - delete: STR_HYBRID_ARMOR
   - delete: STR_ALIEN_DRONE_ARMOR
-  - delete: STR_ANTHROPOD_ARMOR0
-  - delete: STR_ANTHROPOD_ARMOR1
-  - delete: STR_ANTHROPOD_ARMOR2
+  - delete: STR_ANTHROPOD_SOLDIER_ARMOR
+  - delete: STR_ANTHROPOD_NAVIGATOR_ARMOR
+  - delete: STR_ANTHROPOD_ENGINEER_ARMOR
   - delete: STR_SPITTER_ARMOR
   - delete: STR_SPITTER_RETRACT_ARMOR
   - delete: STR_SPITTER_RETRES_ARMOR
@@ -66,9 +66,9 @@
   - delete: CIVM_ARMOR
   - delete: STR_MUTON_SOLDIER_ARMOR
   - delete: STR_MUTON_NAVIGATOR_ARMOR
-  - delete: STR_ETHEREAL_ARMOR0
-  - delete: STR_ETHEREAL_ARMOR1
-  - delete: STR_ETHEREAL_ARMOR2
+  - delete: STR_ETHEREAL_SOLDIER_ARMOR
+  - delete: STR_ETHEREAL_LEADER_ARMOR
+  - delete: STR_ETHEREAL_COMMANDER_ARMOR
   - delete: STR_MUTON_COMMANDER_ARMOR
   - delete: STR_CEREBREAL_STANDARD_ARMOR
   - delete: STR_CEREBREAL_LEADER_ARMOR
@@ -638,7 +638,7 @@
     damageModifier: *StandardCivilianResists
     specialWeapon: STR_UNARMED_SUIT
     loftempsSet: [ 3 ]
-  - type: STR_MIB_ARMOR4
+  - type: STR_MIB_POWER_SUIT
     spriteSheet: MIB_4.PCK
     spriteInv: inventory_MIB4
     corpseBattle:
@@ -688,7 +688,7 @@
       - 1.0
     specialWeapon: STR_UNARMED_POWER_SUIT
     loftempsSet: [ 3 ]
-  - type: STR_MIB_ARMOR5
+  - type: STR_MIB_STORMTROOPER_ARMOR
     spriteSheet: MIB_5.PCK
     spriteInv: inventory_MIB4
     movementType: 1
@@ -1036,7 +1036,7 @@
     damageModifier: *MutonResists
     specialWeapon: STR_UNARMED_MUTON
     loftempsSet: [ 3 ]
-  - type: STR_SECTOID_ARMOR0
+  - type: STR_SECTOID_STANDARD_ARMOR
     spriteInv: sectoidInventoryImage
     spriteSheet: SECTOID.PCK
     corpseBattle:
@@ -1083,7 +1083,7 @@
       - 0.0
       - 1.0
     loftempsSet: [ 2 ]
-  - type: STR_SECTOID_ARMOR2
+  - type: STR_SECTOID_COMMANDER_ARMOR
     spriteInv: sectoidcommanderInventoryImage
     spriteSheet: SECTCOM.PCK
     corpseBattle:
@@ -1162,7 +1162,7 @@
       - 0.0
       - 1.0
     loftempsSet: [ 2 ]
-  - type: STR_FLOATER_ARMOR0
+  - type: STR_FLOATER_SOLDIER_ARMOR
     spriteInv: floaterInventoryImage
     spriteSheet: FLOATER.PCK
     corpseBattle:
@@ -1309,7 +1309,7 @@
     damageModifier: *FloaterResists
     specialWeapon: STR_UNARMED_FLOATER
     loftempsSet: [ 3 ]
-  - type: STR_SNAKEMAN_ARMOR0
+  - type: STR_SNAKEMAN_SOLDIER_ARMOR
     spriteInv: inventory_SNAKEMAN
     spriteSheet: SNAKEMAN.PCK
     corpseBattle:
@@ -1432,7 +1432,7 @@
     damageModifier: *SnakemanResists
     specialWeapon: STR_SNAKE_BITE
     loftempsSet: [ 3 ]
-  - type: STR_SNAKEMAN_ARMOR1
+  - type: STR_SNAKEMAN_LEADER_ARMOR
     spriteInv: inventory_SNAKEMAN_LEADER
     spriteSheet: SNAKEMANLEA.PCK
     corpseBattle:
@@ -1455,7 +1455,7 @@
       - 1.0
       - 0.0
     loftempsSet: [ 3 ]
-  - type: STR_SNAKEMAN_ARMOR2
+  - type: STR_SNAKEMAN_COMMANDER_ARMOR
     spriteInv: inventory_SNAKEMAN_COMMANDER
     spriteSheet: SNAKEMANCOM.PCK
     corpseBattle:
@@ -2621,7 +2621,7 @@
       - STR_ALIEN_DRONE_WEAPON
       - STR_ALIEN_DRONE_WEAPON
     loftempsSet: [ 3 ]
-  - type: STR_ANTHROPOD_ARMOR0
+  - type: STR_ANTHROPOD_SOLDIER_ARMOR
     spriteSheet: ANTHROPOD.PCK
     spriteInv: inventory_ANTHROPOD
     corpseBattle:
@@ -2663,7 +2663,7 @@
       - 1.0
     specialWeapon: STR_UNARMED_ANTHROPOD
     loftempsSet: [ 3 ]
-  - type: STR_ANTHROPOD_ARMOR1
+  - type: STR_ANTHROPOD_NAVIGATOR_ARMOR
     spriteSheet: ANTHROPOD.PCK
     spriteInv: inventory_ANTHROPOD
     corpseBattle:
@@ -2705,7 +2705,7 @@
       - 1.0
     specialWeapon: STR_UNARMED_ANTHROPOD
     loftempsSet: [ 3 ]
-  - type: STR_ANTHROPOD_ARMOR2
+  - type: STR_ANTHROPOD_ENGINEER_ARMOR
     spriteSheet: ANTHROPOD.PCK
     spriteInv: inventory_ANTHROPOD
     corpseBattle:
@@ -4269,7 +4269,7 @@
     damageModifier: *MutonResists
     specialWeapon: STR_UNARMED_MUTON
     loftempsSet: [ 3 ]
-  - type: STR_ETHEREAL_ARMOR0
+  - type: STR_ETHEREAL_SOLDIER_ARMOR
     spriteSheet: ETHEREAL.PCK
     spriteInv: etherealInventoryImage
     corpseBattle:
@@ -4300,10 +4300,10 @@
     overKill: 1.5
     damageModifier: *EtherealResists
     loftempsSet: [ 3 ]
-  - type: STR_ETHEREAL_ARMOR1
+  - type: STR_ETHEREAL_LEADER_ARMOR
     spriteSheet: ETHEREAL.PCK
     spriteInv: etherealInventoryImage
-    ufopediaType: STR_ETHEREAL_ARMOR0
+    ufopediaType: STR_ETHEREAL_SOLDIER_ARMOR
     corpseBattle:
       - STR_ETHEREAL_CORPSE
     visibilityAtDark: 20
@@ -4332,10 +4332,10 @@
     overKill: 1.5
     damageModifier: *EtherealResists
     loftempsSet: [ 3 ]
-  - type: STR_ETHEREAL_ARMOR2
+  - type: STR_ETHEREAL_COMMANDER_ARMOR
     spriteInv: etherealInventoryImage
     spriteSheet: ETHEREAL.PCK
-    ufopediaType: STR_ETHEREAL_ARMOR0
+    ufopediaType: STR_ETHEREAL_SOLDIER_ARMOR
     corpseBattle:
       - STR_ETHEREAL_CORPSE
     visibilityAtDark: 20
