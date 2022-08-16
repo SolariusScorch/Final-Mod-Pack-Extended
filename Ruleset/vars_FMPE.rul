@@ -7,7 +7,7 @@ pediaReplaceCraftFuelWithRangeType: 2
 buildInfiltrationBaseCloseToTheCountry: true
 stunningImprovesMorale: true
 enableNewResearchSorting: true
-# maxLookVariant: 15
+maxLookVariant: 15
 showDogfightDistanceInKm: true
 crewEmergencyEvacuationSurvivalChance: 97
 # surrenderMode: 2
