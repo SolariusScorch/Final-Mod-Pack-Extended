@@ -14,6 +14,7 @@
       114: Resources/Races_Compilation/ChtoniteRace/bigob_ChtoniteFist.png
       115: Resources/Races_Compilation/WaspiteRace/bigob_WaspiteHand.png
       120: Resources/Races_Compilation/SilacoidRace/bigob_SilacoidBite.png
+      125: Resources/Races_Compilation/FloaterRace/bigob_ReaperAttack.png
       130: Resources/Races_Compilation/SectopodRace/bigob_SectopodCannon.png
       131: Resources/Tanks_Compilation/TankWeapons/bigob_SectopodLaserRepeater.png
       140: Resources/Tanks_Compilation/Scoutdrone/bigob_IdentificationDevice.png
@@ -23,6 +24,7 @@
       200: Resources/Weapons_Compilation/HybridWeapons/bigob_DroneBulletWeapon.png
       203: Resources/Races_Compilation/ReptoidRace/Salamandron_Jaws.png
       258: Resources/Weapons_Compilation/NaturalWeapons/bigob_GreenBlob.png
+      260: Resources/Races_Compilation/CerebrealRace/bigob_PsiBlast.png
       400: Resources/UI/Blanks/bigob_Blank.png
       401: Resources/UI/Blanks/Null_Void_1x1.png
       402: Resources/UI/Blanks/Null_Void_1x2.png
@@ -42,6 +44,7 @@
     subX: 3
     subY: 3
     files:
+      560: Resources/Weapons_Compilation/Projectiles/PsiBeam_bullet.png #16
       700: Resources/Weapons_Compilation/Projectiles/BlueLaser_bullet.png #20
       735: Resources/Weapons_Compilation/Projectiles/BlueHeavyLaser_bullet.png #21
 
@@ -51,6 +54,7 @@
     subX: 32
     subY: 40
     files:
+      76: Resources/Races_Compilation/CerebrealRace/PsiBeam_hit.png
       86: Resources/Weapons_Compilation/HitAnimations/BlueLaser_hit.png
 
   - type: SPICONS.DAT

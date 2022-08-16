@@ -1,6 +1,8 @@
 ﻿items:
+  - delete: STR_SCOUT_DRONE
   - delete: ALIEN_DRONE_WEAPON
   - delete: SPITTER_WEAPON
+  - delete: STR_MACHETE
   - type: STR_UNARMED_THUG
     weight: 0
     bigSprite: 100
@@ -1402,7 +1404,6 @@
     autoShots: 8
     sprayWaypoints: 2
     recover: false
-# blanks
   - type: INV_NULL_HAND_L
     weight: 0
     bigSprite: 407
@@ -1536,3 +1537,1258 @@
     fixedWeapon: true
     defaultInventorySlot: STR_LEFT_LEG
     recover: false
+  - type: STR_DEATH_DISC
+    categories: [STR_ALIEN_TECH, STR_THROWING, STR_SPACE, STR_LAND]
+    power: 50
+    damageAlter:
+      RandomType: 6
+      ArmorEffectiveness: 0.65
+    accuracyMultiplier:
+      firing: 0.0
+      throwing: 1.0
+    experienceTrainingMode: 7
+  - type: STR_PLASMA_BLADE
+    categories: [STR_ALIEN_TECH, STR_MELEE, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    power: 45
+    damageType: 5
+    damageAlter:
+      IgnoreOverKill: false
+      ToArmorPre: 0.05
+      ToStun: 0.75
+      RandomWound: false
+      ToWound: 0.12
+      FireThreshold: 25.0
+      ToTile: 1.25
+    damageBonus:
+      strength: 0.1
+      melee: 0.4
+    accuracyMelee: 75
+    meleeMultiplier:
+      melee: 1.0
+    costMelee:
+      time: 15
+      energy: 5
+    costThrow:
+      energy: 12
+    experienceTrainingMode: 13
+  - type: STR_PLASMA_SWORD
+    categories: [STR_ALIEN_TECH, STR_MELEE, STR_SPACE, STR_LAND]
+    power: 65
+    damageType: 5
+    damageAlter:
+      IgnoreOverKill: false
+      ToArmorPre: 0.05
+      ToStun: 0.75
+      RandomWound: false
+      ToWound: 0.12
+      FireThreshold: 25.0
+      ToTile: 1.25
+    damageBonus:
+      strength: 0.3
+      melee: 0.3
+    accuracyMelee: 100
+    meleeMultiplier:
+      melee: 1.0
+    costMelee:
+      time: 20
+      energy: 10
+    costThrow:
+      energy: 18
+    experienceTrainingMode: 13
+  - type: STR_PHOTON_BLADE
+    categories: [STR_ALIEN_TECH, STR_MELEE, STR_CONCEALABLE, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    power: 60
+    damageBonus:
+      melee: 1.0
+    damageType: 4
+    damageAlter:
+      ToTile: 0.9
+    accuracyMelee: 110
+    costMelee:
+      time: 10
+      energy: 2
+    costThrow:
+      energy: 4
+    experienceTrainingMode: 13
+  - type: STR_BLASTER_MULTI_LAUNCHER
+    categories: [STR_ALIEN_TECH, STR_EXPLOSIVES, STR_LAUNCHERS, STR_SPACE, STR_LAND]
+    accuracyCloseQuarters: 60
+    blockBothHands: true
+    experienceTrainingMode: 32
+  - type: STR_BLASTER_MULTI_BOMB
+    categories: [STR_ALIEN_TECH, STR_EXPLOSIVES, STR_LAUNCHERS, STR_CLIPS, STR_SPACE, STR_LAND]
+    damageAlter:
+      IgnoreOverKill: false
+  - type: STR_FIRE_LAUNCHER
+    categories: [STR_ALIEN_TECH, STR_INCENDIARIES, STR_CANNONS, STR_SPACE, STR_LAND]
+    damageAlter:
+      ToMorale: 30.0
+      ToTime: 0.6
+    accuracyCloseQuarters: 80
+  - type: STR_ELECTRO_WHIP
+    categories: [STR_ALIEN_TECH, STR_MELEE, STR_ELECTRIC, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    damageType: 11
+    damageAlter:
+      ToHealth: 0.1
+      ToStun: 1.0
+      ToArmor: 0.0
+      ToWound: 0.0
+      RandomWound: false
+      RandomStun: false
+      IgnorePainImmunity: true
+      IgnoreSelfDestruct: true
+      RandomType: 2
+      IgnoreDirection: false
+      ArmorEffectiveness: 0.33
+      ToTile: 0.0
+    accuracyMultiplier:
+      firing: 0.0
+      throwing: 0.5
+      melee: 0.5
+    blastRadius: 0
+    powerRangeThreshold: 3
+    powerRangeReduction: 999
+    experienceTrainingMode: 15
+  - type: STR_CONCUSSION_CANNON
+    categories: [STR_CANNONS, STR_HEAVY_WEAPONS, STR_ALIEN_TECH, STR_SONIC, STR_UNDERWATER, STR_LAND]
+  - type: STR_STUN_ROD
+    categories: [STR_XCOM_TECH, STR_ELECTRIC, STR_MELEE, STR_INCAPACITATE, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    damageType: 11
+    damageAlter:
+      ToHealth: 0.05
+      ToStun: 1.0
+      ToArmor: 0.0
+      ToWound: 0.0
+      RandomWound: false
+      RandomStun: false
+      IgnorePainImmunity: true
+      IgnoreSelfDestruct: true
+      RandomType: 2
+      IgnoreDirection: false
+      ArmorEffectiveness: 1.0
+      ToTile: 0.0
+    meleeMultiplier:
+      melee: 1.0
+    costMelee:
+      time: 14
+      energy: 6
+    costThrow:
+      energy: 12
+    experienceTrainingMode: 1
+  - type: STR_PISTOL_LT
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_SPORTS, STR_CONCEALABLE, STR_LAND]
+    tuLoad: 15
+    accuracyCloseQuarters: 165
+    aimRange: 18
+    dropoff: 3
+    kneelBonus: 105
+  - type: STR_PISTOL_LT_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_SPORTS, STR_CONCEALABLE, STR_LAND]
+  - type: STR_SYNTHMUSCLES
+    categories: [STR_ALIEN_TECH, STR_COMPONENTS]
+  - type: STR_ALIEN_LASER_RIFLE
+    categories: [STR_ALIEN_TECH, STR_LASER, STR_RIFLES, STR_SPACE, STR_LAND]
+    snapRange: 16
+    accuracyCloseQuarters: 100
+  - type: STR_ALIEN_LASER_RIFLE_CLIP
+    categories: [STR_ALIEN_TECH, STR_LASER, STR_RIFLES, STR_CLIPS, STR_SPACE, STR_LAND]
+  - type: STR_PLASMA_SUB
+    categories: [STR_ALIEN_TECH, STR_PLASMA, STR_SMGS, STR_SPACE, STR_LAND]
+    accuracyCloseQuarters: 120
+    oneHandedPenalty: 65
+  - type: STR_PLASMA_SUB_CLIP
+    categories: [STR_ALIEN_TECH, STR_PLASMA, STR_SMGS, STR_CLIPS, STR_SPACE, STR_LAND]
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      ToArmorPre: 0.05
+      ToStun: 0.75
+      RandomWound: false
+      ToWound: 0.12
+      FireThreshold: 25.0
+    costThrow:
+      energy: 6
+  - type: STR_STUN_BOMB
+    categories: [STR_ALIEN_TECH, STR_INCAPACITATE, STR_LAUNCHERS, STR_CLIPS, STR_UNDERWATER, STR_SPACE, STR_LAND]
+  - type: STR_SMOKE_GRENADE
+    categories: [STR_HUMAN_TECH, STR_SMOKE, STR_GRENADES, STR_SPORTS, STR_CONCEALABLE, STR_LAND]
+    costThrow:
+      energy: 6
+    costPrime:
+      time: 30
+    costUnprime:
+      time: 25
+    unprimeActionName: STR_UNPRIME_GRENADE
+  - type: STR_BLASTER_LAUNCHER
+    categories: [STR_ALIEN_TECH, STR_EXPLOSIVES, STR_LAUNCHERS, STR_SPACE, STR_LAND]
+    accuracyCloseQuarters: 60
+    blockBothHands: true
+    experienceTrainingMode: 32
+  - type: STR_BLASTER_BOMB
+    categories: [STR_ALIEN_TECH, STR_EXPLOSIVES, STR_LAUNCHERS, STR_CLIPS, STR_SPACE, STR_LAND]
+    damageAlter:
+      IgnoreOverKill: false
+  - type: STR_INCENDIARY_ROCKET
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_INCENDIARIES, STR_CLIPS, STR_SPACE, STR_LAND]
+    damageAlter:
+      ToHealth: 1.9
+      ToMorale: 15.0
+      ToTime: 0.3
+  - type: STR_LARGE_ROCKET
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_CLIPS, STR_SPACE, STR_LAND]
+    damageAlter:
+      IgnoreOverKill: false
+      ToTile: 0.66
+  - type: STR_SMALL_ROCKET
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_CLIPS, STR_SPACE, STR_LAND]
+    damageAlter:
+      IgnoreOverKill: false
+  - type: STR_MIND_PROBE
+    categories: [STR_ALIEN_TECH, STR_EQUIPMENT, STR_PSI, STR_CONCEALABLE, STR_UNDERWATER, STR_SPACE, STR_LAND]
+  - type: STR_ELECTRO_FLARE
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_SPACE, STR_LAND]
+    costPrime:
+      time: 15
+    primeActionName: STR_PRIME_FLARE
+    primeActionMessage: STR_FLARE_IS_ACTIVATED
+    fuseType: -2
+    fuseTriggerEvents:
+      defaultBehavior: false
+      throwTrigger: true
+  - type: STR_MOTION_SCANNER
+    categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_CONCEALABLE, STR_LABOR, STR_UNDERWATER, STR_SPACE, STR_LAND]
+  - type: STR_HIGH_EXPLOSIVE
+    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_SPACE, STR_LAND]
+    damageAlter:
+      IgnoreOverKill: false
+      ToTile: 0.66
+    costThrow:
+      energy: 16
+    costPrime:
+      time: 45
+    costUnprime:
+      time: 20
+    unprimeActionName: STR_UNPRIME_GRENADE
+  - type: STR_ALIEN_GRENADE
+    categories: [STR_ALIEN_TECH, STR_GRENADES, STR_EXPLOSIVES, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    damageAlter:
+      RandomType: 2
+      ResistType: 5
+      FixRadius: 5
+      IgnoreOverKill: false
+  - type: STR_MEDI_KIT
+    categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    costUse:
+      time: 12
+      morale: -5
+    experienceTrainingMode: 19
+  - type: STR_SALAMANDRON_BITE
+    categories: [STR_BUILT_INS]
+    damageAlter:
+      IgnoreOverKill: false
+      ToTile: 0.33
+  - type: STR_REAPER_WEAPON
+    categories: [STR_BUILT_INS]
+    weight: 3
+    bigSprite: 125
+    floorSprite: 31
+    handSprite: 104
+    meleeAnimation: 12
+    meleeSound: 48
+    meleeHitSound: 70
+    clipSize: -1
+    strengthApplied: true
+    damageType: 7
+    damageAlter:
+      ToStun: 1.0
+      ToWound: 0.1
+      RandomWound: false
+    accuracyMelee: 100
+    tuMelee: 15
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    flatRate: true
+  - type: STR_MACHETE
+    categories: [STR_HUMAN_TECH, STR_MELEE, STR_CONCEALABLE, STR_UNDERWATER, STR_BEACH, STR_SPACE, STR_LAND]
+    power: 20
+    damageBonus:
+      strength: 0.3
+      melee: 0.1
+    damageAlter:
+      ArmorEffectiveness: 1.2
+      ToTile: 0.33
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    costMelee:
+      time: 6
+      energy: 2
+    costThrow:
+      energy: 10
+    experienceTrainingMode: 13
+  - type: STR_ALLOY_SWORD
+    categories: [STR_XCOM_TECH, STR_MELEE, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    damageBonus:
+      strength: 0.6
+      melee: 0.2
+    damageAlter:
+      ToTile: 0.3
+    accuracyMelee: 95
+    meleeMultiplier:
+      melee: 1.0
+    costMelee:
+      time: 12
+      energy: 7
+    costThrow:
+      energy: 20
+    experienceTrainingMode: 13
+  - type: STR_RPG
+    categories: [STR_HUMAN_TECH, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_EXPLOSIVES, STR_LAND]
+    tuLoad: 20
+    accuracyCloseQuarters: 66
+    blockBothHands: true
+  - type: STR_RPG_ROCKET
+    categories: [STR_HUMAN_TECH, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_EXPLOSIVES, STR_CLIPS, STR_LAND]
+    damageAlter:
+      IgnoreOverKill: false
+      ToTile: 0.66
+  - type: STR_HUNTING_RIFLE
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_LAND]
+    tuLoad: 20
+    snapRange: 25
+    accuracyCloseQuarters: 66
+    oneHandedPenalty: 30
+    costThrow:
+      energy: 16
+  - type: STR_HUNTING_RIFLE_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS, STR_LAND]
+    damageAlter:
+      RandomType: 7
+  - type: STR_PUMP_ACTION
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_LAND]
+    accuracyCloseQuarters: 100
+    shotgunChoke: 70
+    tuLoad: 30
+    blockBothHands: true
+  - type: STR_PUMP_ACTION_SHELLS
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+    shotgunBehavior: 1
+    shotgunSpread: 25
+    shotgunPellets: 5
+  - type: STR_SNUBNOSE_PISTOL
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE, STR_LAND]
+    accuracyCloseQuarters: 145
+    tuLoad: 15
+    aimRange: 18
+    dropoff: 4
+    kneelBonus: 105
+  - type: STR_SNUBNOSE_PISTOL_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
+  - type: STR_AK47
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_LAND]
+    accuracyCloseQuarters: 100
+    snapRange: 16
+    costThrow:
+      energy: 16
+  - type: STR_AK47_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_LAND, STR_CLIPS]
+  - type: STR_UZI
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CONCEALABLE, STR_LAND]
+    accuracyCloseQuarters: 133
+    costThrow:
+      energy: 12
+    autoRange: 9
+    snapRange: 12
+    confSnap:
+      shots: 3
+    kneelBonus: 105
+    sprayWaypoints: 2
+  - type: STR_UZI_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
+  - type: STR_DYNAMITE
+    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_SPACE, STR_LAND]
+    damageAlter:
+      IgnoreOverKill: false
+      ToTile: 0.85
+    costThrow:
+      energy: 12
+    costPrime:
+      time: 50
+    costUnprime:
+      time: 35
+    unprimeActionName: STR_UNPRIME_GRENADE
+  - type: STR_XCOM_CYBERDISC_PLASMA
+    categories: [STR_ALIEN_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      ToArmorPre: 0.05
+      ToStun: 0.75
+      RandomWound: false
+      ToWound: 0.12
+      FireThreshold: 25.0
+  - type: STR_XCOM_CYBERDISC_LASER
+    categories: [STR_ALIEN_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
+    damageAlter:
+      IgnoreOverKill: false
+  - type: STR_CEREBREAL_WEAPON
+    categories: [STR_BUILT_INS]
+    weight: 3
+    bigSprite: 992
+    floorSprite: 31
+    handSprite: 104
+    bulletSprite: 16
+    fireSound: 73
+    hitSound: 19
+    hitAnimation: 76
+    power: 110
+    damageType: 5
+    accuracyCloseQuarters: 120
+    accuracySnap: 50
+    accuracyAimed: 90
+    tuSnap: 55
+    tuAimed: 80
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 2
+    clipSize: -1
+    recover: false
+  - type: CEREBREAL_LARVA_WEAPON
+    categories: [STR_BUILT_INS]
+    damageAlter:
+      IgnoreOverKill: false
+    accuracyCloseQuarters: 100
+  - type: STR_HWP_CANNON_SHELLS
+    categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND, STR_CLIPS]
+    damageAlter:
+      IgnoreOverKill: false
+  - type: STR_TANK_ROCKET_LAUNCHER
+    categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
+  - type: STR_HWP_ROCKETS
+    categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND, STR_CLIPS]
+    damageAlter:
+      IgnoreOverKill: false
+  - type: STR_TANK_LASER_CANNON
+    categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
+    damageAlter:
+      IgnoreOverKill: false
+  - type: STR_TANK_PLASMA
+    categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      ToArmorPre: 0.05
+      ToStun: 0.75
+      RandomWound: false
+      ToWound: 0.12
+      FireThreshold: 25.0
+  - type: STR_HOVERTANK_LASER_CANNON
+    categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
+    damageAlter:
+      IgnoreOverKill: false
+  - type: STR_HOVERTANK_PLASMA
+    categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      ToArmorPre: 0.05
+      ToStun: 0.75
+      RandomWound: false
+      ToWound: 0.12
+      FireThreshold: 25.0
+  - type: STR_HOVERTANK_ROCKET_LAUNCHER
+    categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
+  - type: STR_HOVERTANK_LAUNCHER
+    categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
+  - type: STR_HWP_FUSION_BOMB
+    categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND, STR_CLIPS]
+    damageAlter:
+      IgnoreOverKill: false
+  - type: STR_SECTOPOD_LASER
+    categories: [STR_ALIEN_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
+    damageAlter:
+      IgnoreOverKill: false
+  - type: STR_SECTOPOD_PLASMA
+    categories: [STR_ALIEN_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      ToArmorPre: 0.05
+      ToStun: 0.75
+      RandomWound: false
+      ToWound: 0.12
+      FireThreshold: 25.0
+  - type: STR_MULTI_LAUNCHER
+    categories: [STR_XCOM_TECH, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_EXPLOSIVES, STR_SPACE, STR_LAND]
+    accuracyCloseQuarters: 45
+    oneHandedPenalty: 60
+  - type: STR_ROCKET_PACK
+    categories: [STR_XCOM_TECH, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_EXPLOSIVES, STR_CLIPS, STR_SPACE, STR_LAND]
+    damageAlter:
+      IgnoreOverKill: false
+  - type: STR_ADVANCED_ROCKET_LAUNCHER
+    categories: [STR_XCOM_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_SPACE, STR_LAND]
+    accuracyCloseQuarters: 33
+    blockBothHands: true
+  - type: STR_ELERIUM_ROCKET
+    categories: [STR_XCOM_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_CLIPS, STR_SPACE, STR_LAND]
+    damageAlter:
+      ResistType: 5
+      IgnoreOverKill: false
+  - type: STR_MIND_GUIDED_MISSILE
+    categories: [STR_XCOM_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_CLIPS, STR_SPACE, STR_LAND]
+  - type: STR_TOXIGUN
+    categories: [STR_CHEMICALS, STR_ALIEN_TECH, STR_SHOTGUNS, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    accuracyCloseQuarters: 100
+    snapRange: 8
+    dropoff: 4
+    shotgunChoke: 100
+  - type: STR_TOXIGUN_FLASK
+    categories: [STR_CHEMICALS, STR_ALIEN_TECH, STR_SHOTGUNS, STR_CLIPS, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    damageAlter:
+      IgnoreOverKill: false
+      ToArmorPre: 0.1
+      ToStun: 0.5
+      ToMorale: 5.0
+    shotgunBehavior: 1
+    shotgunSpread: 25
+  - type: STR_PLASMA_CASTER
+    categories: [STR_PISTOLS, STR_SHOTGUNS, STR_PLASMA, STR_ALIEN_TECH, STR_SPACE, STR_LAND]
+    accuracyCloseQuarters: 133
+    accuracyMultiplier:
+      firing: 0.5
+      flatHundred: 0.5
+    snapRange: 20
+    dropoff: 5
+    shotgunChoke: 100
+  - type: STR_PLASMA_CASTER_CLIP
+    categories: [STR_PISTOLS, STR_SHOTGUNS, STR_PLASMA, STR_ALIEN_TECH, STR_CLIPS, STR_SPACE, STR_LAND]
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      ToArmorPre: 0.05
+      ToStun: 0.75
+      RandomWound: false
+      ToWound: 0.12
+      FireThreshold: 25.0
+    shotgunBehavior: 1
+    shotgunSpread: 50
+  - type: STR_PLASMA_SNIPER_RIFLE
+    categories: [STR_SNIPER_RIFLES, STR_PLASMA, STR_ALIEN_TECH, STR_SPACE, STR_LAND]
+    accuracyCloseQuarters: 66
+    accuracyMultiplier:
+      firing: [0.0, 0.01]
+    snapRange: 30
+  - type: STR_PLASMA_SNIPER_RIFLE_CLIP
+    categories: [STR_SNIPER_RIFLES, STR_PLASMA, STR_ALIEN_TECH, STR_CLIPS, STR_SPACE, STR_LAND]
+    power: 80
+    damageBonus:
+      firing: 0.2
+    damageAlter:
+      RandomType: 7
+      ArmorEffectiveness: 0.75
+      IgnoreOverKill: false
+      ToArmorPre: 0.05
+      ToStun: 0.75
+      RandomWound: false
+      ToWound: 0.12
+      FireThreshold: 25.0
+  - type: STR_PLASMA_DESTROYER
+    categories: [STR_CANNONS, STR_PLASMA, STR_ALIEN_TECH, STR_SPACE, STR_LAND]
+    accuracyCloseQuarters: 66
+  - type: STR_PLASMA_DESTROYER_CLIP
+    categories: [STR_CANNONS, STR_PLASMA, STR_ALIEN_TECH, STR_CLIPS, STR_SPACE, STR_LAND]
+    damageAlter:
+      IgnoreOverKill: false
+      ToArmorPre: 0.05
+      ToStun: 0.75
+      ResistType: 5
+  - type: STR_FUSION_TORCH
+    categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_LABOR, STR_SPACE, STR_LAND]
+    accuracyCloseQuarters: 40
+    blockBothHands: true
+    experienceTrainingMode: 1
+  - type: STR_FUSION_TORCH_POWER_CELL
+    categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_CLIPS, STR_LABOR, STR_SPACE, STR_LAND]
+    damageAlter:
+      ToArmorPre: 0.15
+      ToStun: 0.75
+      RandomWound: false
+      FireThreshold: 25.0
+      RandomType: 7
+      ToTile: 0.75
+  - type: STR_DART_RIFLE
+    categories: [STR_XCOM_TECH, STR_RIFLES, STR_INCAPACITATE, STR_BEACH, STR_UNDERWATER, STR_LAND]
+    accuracyCloseQuarters: 80
+    accuracySnap: 75
+    accuracyAimed: 115
+    aimRange: 15
+    snapRange: 13
+    dropoff: 4
+  - type: STR_DART_RIFLE_CLIP_A
+    categories: [STR_XCOM_TECH, STR_RIFLES, STR_INCAPACITATE, STR_CLIPS, STR_BEACH, STR_UNDERWATER, STR_LAND]
+    damageType: 15
+    damageAlter:
+      ToTile: 0.1
+      ToHealth: 0.1
+      ToStun: 1.0
+      ToWound: 0.0
+  - type: STR_DART_RIFLE_CLIP_B
+    categories: [STR_XCOM_TECH, STR_RIFLES, STR_INCAPACITATE, STR_CLIPS, STR_BEACH, STR_UNDERWATER, STR_LAND]
+    damageType: 15
+    damageAlter:
+      ToTile: 0.1
+      ToHealth: 0.1
+      ToStun: 1.0
+      ToWound: 0.0
+  - type: STR_DART_RIFLE_CLIP_C
+    categories: [STR_XCOM_TECH, STR_RIFLES, STR_INCAPACITATE, STR_CLIPS, STR_BEACH, STR_UNDERWATER, STR_LAND]
+    damageType: 15
+    damageAlter:
+      ToTile: 0.1
+      ToHealth: 0.1
+      ToStun: 1.0
+      ToWound: 0.0
+  - type: STR_KNOCKOUT_GRENADE
+    categories: [STR_XCOM_TECH, STR_GRENADES, STR_INCAPACITATE, STR_CONCEALABLE, STR_LAND]
+    damageAlter:
+      ResistType: 9
+      RandomType: 2
+      IgnoreDirection: true
+      IgnoreSelfDestruct: true
+    costThrow:
+      energy: 6
+    costPrime:
+      time: 30
+    costUnprime:
+      time: 25
+    unprimeActionName: STR_UNPRIME_GRENADE
+  - type: STR_STUN_GRENADE
+    categories: [STR_XCOM_TECH, STR_GRENADES, STR_INCAPACITATE, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    costThrow:
+      energy: 8
+    costPrime:
+      time: 30
+    costUnprime:
+      time: 25
+    unprimeActionName: STR_UNPRIME_GRENADE
+  - type: STR_ELERIUM_MACE
+    categories: [STR_XCOM_TECH, STR_MELEE, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    damageAlter:
+      ToHealth: 0.05
+      RandomType: 2
+      ResistType: 11
+      ToArmorPre: 0.25
+      IgnoreSelfDestruct: true
+    costMelee:
+      time: 17
+      energy: 14
+    meleeMultiplier:
+      flatHundred: 0.25
+      melee: 0.75
+    experienceTrainingMode: 13
+  - type: STR_LASER_PISTOL_MIB
+    categories: [STR_HUMAN_TECH, STR_LASER, STR_PISTOLS, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    accuracyCloseQuarters: 133
+    tuLoad: 15
+    aimRange: 30
+    dropoff: 3
+    kneelBonus: 105
+  - type: STR_LASER_PISTOL_MIB_CLIP
+    categories: [STR_HUMAN_TECH, STR_LASER, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    damageAlter:
+      IgnoreOverKill: false
+  - type: STR_LASER_RIFLE_MIB
+    categories: [STR_HUMAN_TECH, STR_LASER, STR_RIFLES, STR_SPACE, STR_LAND]
+    accuracyCloseQuarters: 100
+    snapRange: 16
+  - type: STR_LASER_RIFLE_MIB_CLIP
+    categories: [STR_HUMAN_TECH, STR_LASER, STR_RIFLES, STR_CLIPS, STR_SPACE, STR_LAND]
+    damageAlter:
+      IgnoreOverKill: false
+  - type: STR_HEAVY_LASER_MIB
+    categories: [STR_HUMAN_TECH, STR_LASER, STR_HEAVY_WEAPONS, STR_CANNONS, STR_SPACE, STR_LAND]
+    accuracyCloseQuarters: 60
+    blockBothHands: true
+  - type: STR_HEAVY_LASER_MIB_CLIP
+    categories: [STR_HUMAN_TECH, STR_LASER, STR_HEAVY_WEAPONS, STR_CANNONS, STR_CLIPS, STR_SPACE, STR_LAND]
+    damageAlter:
+      IgnoreOverKill: false
+  - type: STR_NUCLEAR_LASER_PISTOL
+    categories: [STR_XCOM_TECH, STR_LASER, STR_PISTOLS, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    damageAlter:
+      IgnoreOverKill: false
+    aimRange: 30
+    dropoff: 3
+    kneelBonus: 105
+  - type: STR_NUCLEAR_LASER_RIFLE
+    categories: [STR_XCOM_TECH, STR_LASER, STR_RIFLES, STR_SPACE, STR_LAND]
+    damageAlter:
+      IgnoreOverKill: false
+    accuracyCloseQuarters: 100
+    snapRange: 16
+  - type: STR_NUCLEAR_HEAVY_LASER
+    categories: [STR_XCOM_TECH, STR_LASER, STR_CANNONS, STR_HEAVY_WEAPONS, STR_SPACE, STR_LAND]
+    damageAlter:
+      IgnoreOverKill: false
+    accuracyCloseQuarters: 60
+    blockBothHands: true
+  - type: STR_LASER_SNIPER_RIFLE
+    categories: [STR_XCOM_TECH, STR_LASER, STR_SNIPER_RIFLES, STR_SPACE, STR_LAND]
+    power: 50
+    damageAlter:
+      RandomType: 7
+      ArmorEffectiveness: 0.75
+      IgnoreOverKill: false
+    damageBonus:
+      firing: 0.25
+    accuracyCloseQuarters: 80
+    accuracyMultiplier:
+      firing: [0.0, 0.01]
+    snapRange: 33
+    dropoff: 3
+  - type: STR_LASER_SHOTGUN
+    categories: [STR_XCOM_TECH, STR_LASER, STR_SHOTGUNS, STR_SPACE, STR_LAND]
+    damageAlter:
+      IgnoreOverKill: false
+    accuracyCloseQuarters: 80
+    shotgunChoke: 100
+    shotgunBehavior: 1
+    shotgunSpread: 32
+  - type: STR_SMALL_LAUNCHER
+    categories: [STR_ALIEN_TECH, STR_EXPLOSIVES, STR_INCAPACITATE, STR_LAUNCHERS, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    accuracyCloseQuarters: 100
+    oneHandedPenalty: 75
+  - type: STR_ELERIUM_BOMB
+    categories: [STR_ALIEN_TECH, STR_EXPLOSIVES, STR_LAUNCHERS, STR_CLIPS, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    damageAlter:
+      ResistType: 5
+      IgnoreOverKill: false
+      FixRadius: 4
+  - type: STR_PLASMA_PISTOL
+    categories: [STR_ALIEN_TECH, STR_PLASMA, STR_PISTOLS, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    accuracyCloseQuarters: 133
+    tuLoad: 15
+    aimRange: 16
+    dropoff: 3
+    kneelBonus: 105
+  - type: STR_PLASMA_PISTOL_CLIP
+    categories: [STR_ALIEN_TECH, STR_PLASMA, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      ToArmorPre: 0.05
+      ToStun: 0.75
+      RandomWound: false
+      ToWound: 0.12
+      FireThreshold: 25.0
+  - type: STR_PLASMA_RIFLE
+    categories: [STR_ALIEN_TECH, STR_PLASMA, STR_RIFLES, STR_SPACE, STR_LAND]
+    accuracyCloseQuarters: 100
+    aimRange: 25
+    snapRange: 16
+  - type: STR_PLASMA_RIFLE_CLIP
+    categories: [STR_ALIEN_TECH, STR_PLASMA, STR_RIFLES, STR_CLIPS, STR_SPACE, STR_LAND]
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      ToArmorPre: 0.05
+      ToStun: 0.75
+      RandomWound: false
+      ToWound: 0.12
+      FireThreshold: 25.0
+  - type: STR_HEAVY_PLASMA
+    categories: [STR_ALIEN_TECH, STR_PLASMA, STR_HEAVY_WEAPONS, STR_RIFLES, STR_SPACE, STR_LAND]
+    accuracyCloseQuarters: 95
+    aimRange: 25
+    snapRange: 16
+  - type: STR_HEAVY_PLASMA_CLIP
+    categories: [STR_ALIEN_TECH, STR_PLASMA, STR_HEAVY_WEAPONS, STR_RIFLES, STR_CLIPS, STR_SPACE, STR_LAND]
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      ToArmorPre: 0.05
+      ToStun: 0.75
+      RandomWound: false
+      ToWound: 0.12
+      FireThreshold: 25.0
+  - type: STR_BLASTER_LAUNCHER
+    categories: [STR_ALIEN_TECH, STR_EXPLOSIVES, STR_LAUNCHERS, STR_SPACE, STR_LAND]
+    accuracyCloseQuarters: 60
+    tuLoad: 20
+    blockBothHands: true
+    experienceTrainingMode: 32
+  - type: STR_PISTOL
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE, STR_LAND]
+    accuracyCloseQuarters: 133
+    tuLoad: 15
+    aimRange: 22
+    dropoff: 3
+    kneelBonus: 105
+  - type: STR_PISTOL_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
+  - type: STR_ASSAULT_RIFLE
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_LAND]
+    accuracyCloseQuarters: 100
+    oneHandedPenalty: 55
+    sprayWaypoints: 2
+    snapRange: 18
+    autoRange: 14
+  - type: STR_RIFLE
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_LAND]
+    accuracyCloseQuarters: 100
+  - type: STR_RIFLE_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS, STR_LAND]
+    damageAlter:
+      ArmorEffectiveness: 0.8
+  - type: STR_RIFLE_AA_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS, STR_LAND]
+    damageAlter:
+      ArmorEffectiveness: 0.85
+  - type: STR_HEAVY_CANNON
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_LAND]
+    accuracyCloseQuarters: 45
+    tuLoad: 20
+    oneHandedPenalty: 65
+    aimRange: 25
+  - type: STR_HC_AP_AMMO
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
+    damageAlter:
+      ArmorEffectiveness: 0.65
+  - type: STR_HC_HE_AMMO
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
+    damageAlter:
+      IgnoreOverKill: false
+      ToTile: 0.66
+  - type: STR_HC_I_AMMO
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
+    damageAlter:
+      ToHealth: 1.75
+      ToMorale: 15.0
+      ToTime: 0.3
+  - type: STR_HC_AA_AMMO
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
+    damageAlter:
+      ArmorEffectiveness: 0.75
+  - type: STR_AUTO_CANNON
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_LAND]
+    accuracyCloseQuarters: 55
+    sprayWaypoints: 2
+    shotgunChoke: 80
+    aimRange: 22
+  - type: STR_AC_AP_AMMO
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
+    damageAlter:
+      ArmorEffectiveness: 0.75
+  - type: STR_AC_HE_AMMO
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
+    damageAlter:
+      IgnoreOverKill: false
+  - type: STR_AC_I_AMMO
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
+    damageAlter:
+      ToHealth: 1.5
+      ToMorale: 15.0
+      ToTime: 0.3
+  - type: STR_AC_AA_AMMO
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
+    damageAlter:
+      ArmorEffectiveness: 0.85
+  - type: STR_GAUSS_PISTOL
+    categories: [STR_XCOM_TECH, STR_MASS_DRIVER, STR_PISTOLS, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    accuracyCloseQuarters: 133
+    tuLoad: 15
+    aimRange: 25
+    dropoff: 3
+    kneelBonus: 105
+  - type: STR_GAUSS_PISTOL_CLIP
+    categories: [STR_XCOM_TECH, STR_MASS_DRIVER, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+  - type: STR_GAUSS_RIFLE
+    categories: [STR_XCOM_TECH, STR_MASS_DRIVER, STR_RIFLES, STR_SPACE, STR_LAND]
+    accuracyCloseQuarters: 100
+    snapRange: 16
+  - type: STR_GAUSS_RIFLE_CLIP
+    categories: [STR_XCOM_TECH, STR_MASS_DRIVER, STR_RIFLES, STR_CLIPS, STR_SPACE, STR_LAND]
+  - type: STR_GAUSS_SNIPER_RIFLE
+    categories: [STR_XCOM_TECH, STR_MASS_DRIVER, STR_SNIPER_RIFLES, STR_SPACE, STR_LAND]
+    accuracyCloseQuarters: 80
+    accuracyMultiplier:
+      firing: [0.0, 0.01]
+  - type: STR_GAUSS_SNIPER_RIFLE_CLIP
+    categories: [STR_XCOM_TECH, STR_MASS_DRIVER, STR_SNIPER_RIFLES, STR_CLIPS, STR_SPACE, STR_LAND]
+    power: 70
+    damageBonus:
+      firing: 0.3
+    damageAlter:
+      RandomType: 7
+      ArmorEffectiveness: 0.75
+  - type: STR_HEAVY_GAUSS
+    categories: [STR_XCOM_TECH, STR_MASS_DRIVER, STR_HEAVY_WEAPONS, STR_CANNONS, STR_SPACE, STR_LAND]
+    accuracyCloseQuarters: 60
+  - type: STR_HEAVY_GAUSS_CLIP
+    categories: [STR_XCOM_TECH, STR_MASS_DRIVER, STR_HEAVY_WEAPONS, STR_CANNONS, STR_CLIPS, STR_SPACE, STR_LAND]
+  - type: STR_RAIL_PISTOL
+    categories: [STR_XCOM_TECH, STR_MASS_DRIVER, STR_PISTOLS, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    accuracyCloseQuarters: 133
+    tuLoad: 15
+    aimRange: 25
+    dropoff: 3
+    kneelBonus: 105
+  - type: STR_RAIL_PISTOL_CLIP
+    categories: [STR_XCOM_TECH, STR_MASS_DRIVER, STR_PISTOLS, STR_CONCEALABLE, STR_SPACE, STR_LAND, STR_CLIPS]
+  - type: STR_RAIL_RIFLE
+    categories: [STR_XCOM_TECH, STR_MASS_DRIVER, STR_RIFLES, STR_SPACE, STR_LAND]
+    accuracyCloseQuarters: 100
+    snapRange: 16
+  - type: STR_RAIL_RIFLE_CLIP
+    categories: [STR_XCOM_TECH, STR_MASS_DRIVER, STR_RIFLES, STR_CLIPS, STR_SPACE, STR_LAND]
+  - type: STR_RAIL_SNIPER_RIFLE
+    categories: [STR_XCOM_TECH, STR_MASS_DRIVER, STR_SNIPER_RIFLES, STR_SPACE, STR_LAND]
+    accuracyCloseQuarters: 80
+    accuracyMultiplier:
+      firing: [0.0, 0.01]
+  - type: STR_RAIL_SNIPER_RIFLE_CLIP
+    categories: [STR_XCOM_TECH, STR_MASS_DRIVER, STR_SNIPER_RIFLES, STR_CLIPS, STR_SPACE, STR_LAND]
+    power: 120
+    damageBonus:
+      firing: 0.25
+    damageAlter:
+      RandomType: 7
+      ArmorEffectiveness: 0.75
+  - type: STR_HEAVY_RAILGUN
+    categories: [STR_XCOM_TECH, STR_MASS_DRIVER, STR_HEAVY_WEAPONS, STR_CANNONS, STR_SPACE, STR_LAND]
+    accuracyCloseQuarters: 60
+  - type: STR_HEAVY_RAILGUN_CLIP
+    categories: [STR_XCOM_TECH, STR_MASS_DRIVER, STR_HEAVY_WEAPONS, STR_CANNONS, STR_CLIPS, STR_SPACE, STR_LAND]
+  - type: STR_MEDI_PACK
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_LAND]
+    costUse:
+      time: 20
+      morale: -5
+    experienceTrainingMode: 19
+  - type: STR_FLAMETHROWER
+    categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_HEAVY_WEAPONS, STR_LAND]
+    accuracyCloseQuarters: 100
+    tuLoad: 20
+    costThrow:
+      energy: 20
+    powerRangeReduction: 999
+    experienceTrainingMode: 7
+  - type: STR_FLAMETHROWER_CLIP
+    categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
+    power: 30
+    damageAlter:
+      ToMorale: 30.0
+      ToTime: 0.6
+    costThrow:
+      energy: 10
+  - type: STR_INCENDIARY_GRENADE
+    categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_GRENADES, STR_CONCEALABLE, STR_LAND]
+    damageAlter:
+      ToMorale: 15.0
+      ToTime: 0.6
+    costThrow:
+      energy: 6
+    costPrime:
+      time: 30
+    costUnprime:
+      time: 25
+    unprimeActionName: STR_UNPRIME_GRENADE
+  - type: STR_COMBAT_KNIFE
+    categories: [STR_HUMAN_TECH, STR_MELEE, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    power: 20
+    damageBonus:
+      strength: 0.2
+      melee: 0.2
+    damageAlter:
+      RandomType: 2
+      ToTile: 0.15
+    meleeMultiplier:
+      melee: 1.0
+    costMelee:
+      time: 7
+      energy: 2
+    costThrow:
+      energy: 8
+    experienceTrainingMode: 13
+  - type: STR_ALLOY_KNIFE
+    categories: [STR_XCOM_TECH, STR_MELEE, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    power: 30
+    damageBonus:
+      strength: 0.2
+      melee: 0.2
+    damageAlter:
+      RandomType: 2
+      ArmorEffectiveness: 0.8
+      ToTile: 0.15
+    meleeMultiplier:
+      melee: 1.0
+    costMelee:
+      time: 7
+      energy: 2
+    costThrow:
+      energy: 8
+    experienceTrainingMode: 13
+  - type: STR_SHOTGUN
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_LAND]
+    accuracyCloseQuarters: 100
+    tuLoad: 25
+    blockBothHands: true
+    shotgunChoke: 100
+  - type: STR_SHOTGUN_SHELLS
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+    shotgunBehavior: 1
+    shotgunSpread: 25
+  - type: STR_SHOTGUN_SHELLS_AP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+  - type: STR_SHOTGUN_AA_SHELLS
+    categories: [STR_XCOM_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+  - type: STR_HMG
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_MACHINE_GUNS, STR_HEAVY_WEAPONS, STR_LAND]
+    accuracyCloseQuarters: 28
+    tuLoad: 25
+    autoRange: 100
+    blockBothHands: true
+    sprayWaypoints: 2
+  - type: STR_HMG_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_MACHINE_GUNS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
+    damageAlter:
+      ArmorEffectiveness: 0.85
+  - type: STR_HMG_AA_CLIP
+    categories: [STR_XCOM_TECH, STR_FIREARMS, STR_MACHINE_GUNS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
+    damageAlter:
+      ArmorEffectiveness: 0.85
+  - type: STR_SNIPER_RIFLE
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SNIPER_RIFLES, STR_LAND]
+    accuracyCloseQuarters: 66
+    accuracyAimed: 120
+    accuracyMultiplier:
+      firing: [0.0, 0.01]
+      bravery: 0.5
+    snapRange: 30
+    costThrow:
+      energy: 20
+    oneHandedPenalty: 25
+  - type: STR_SNIPER_RIFLE_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SNIPER_RIFLES, STR_CLIPS, STR_LAND]
+    power: 28
+    damageBonus:
+      firing: 0.25
+    damageAlter:
+      RandomType: 7
+      ArmorEffectiveness: 0.75
+  - type: STR_SNIPER_RIFLE_AA_CLIP
+    categories: [STR_XCOM_TECH, STR_FIREARMS, STR_SNIPER_RIFLES, STR_CLIPS, STR_LAND]
+    power: 37
+    damageBonus:
+      firing: 0.25
+    damageAlter:
+      RandomType: 7
+      ArmorEffectiveness: 0.75
+  - type: STR_HEAVY_SNIPER_RIFLE
+    categories: [STR_XCOM_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_SNIPER_RIFLES, STR_LAND]
+    accuracyCloseQuarters: 45
+    accuracyAimed: 105
+    accuracyMultiplier:
+      firing: [0.0, 0.01]
+    snapRange: 40
+    oneHandedPenalty: 25
+  - type: STR_HEAVY_SNIPER_RIFLE_CLIP
+    categories: [STR_XCOM_TECH, STR_FIREARMS, STR_SNIPER_RIFLES, STR_CLIPS, STR_LAND]
+    power: 50
+    damageBonus:
+      firing: 0.2
+    damageAlter:
+      RandomType: 7
+      ArmorEffectiveness: 0.65
+  - type: STR_HEAVY_SNIPER_RIFLE_HE_CLIP
+    categories: [STR_XCOM_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_SNIPER_RIFLES, STR_CLIPS, STR_LAND]
+    power: 54
+    damageBonus:
+      firing: 0.1
+    damageAlter:
+      IgnoreOverKill: false
+  - type: STR_HEAVY_SNIPER_RIFLE_AA_CLIP
+    categories: [STR_XCOM_TECH, STR_FIREARMS, STR_SNIPER_RIFLES, STR_CLIPS, STR_LAND]
+    power: 70
+    damageBonus:
+      firing: 0.2
+    damageAlter:
+      RandomType: 7
+      ArmorEffectiveness: 0.65
+  - type: STR_TASER
+    categories: [STR_HUMAN_TECH, STR_INCAPACITATE, STR_ELECTRIC, STR_PISTOLS, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    accuracyCloseQuarters: 133
+    tuLoad: 15
+    powerRangeReduction: 999
+    experienceTrainingMode: 4
+  - type: STR_TASER_CLIP
+    categories: [STR_HUMAN_TECH, STR_INCAPACITATE, STR_ELECTRIC, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    damageType: 11
+    damageAlter:
+      ToHealth: 0.05
+      ToStun: 1.0
+      ToArmor: 0.0
+      ToWound: 0.0
+      RandomWound: false
+      RandomStun: false
+      IgnorePainImmunity: true
+      IgnoreSelfDestruct: true
+      RandomType: 2
+      IgnoreDirection: false
+      ArmorEffectiveness: 1.0
+      ToTile: 0.0
+  - type: STR_LANDMINE
+    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    damageAlter:
+      IgnoreOverKill: false
+      ToTime: 0.35
+    costThrow:
+      energy: 18
+    costPrime:
+      time: 40
+    costUnprime:
+      time: 70
+    primeActionName: STR_PRIME_MINE
+    primeActionMessage: STR_MINE_IS_ACTIVATED
+    unprimeActionName: STR_UNPRIME_MINE
+    unprimeActionMessage: STR_MINE_IS_DEACTIVATED
+  - type: STR_PROXIMITY_GRENADE
+    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    damageAlter:
+      ToTime: 0.15
+      IgnoreOverKill: false
+    costThrow:
+      energy: 6
+    costPrime:
+      time: 30
+    costUnprime:
+      time: 25
+    unprimeActionName: STR_UNPRIME_GRENADE
+  - type: STR_MAGNUM
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE, STR_LAND]
+    accuracyCloseQuarters: 133
+    tuLoad: 18
+    aimRange: 16
+    snapRange: 13
+    dropoff: 3
+    kneelBonus: 105
+  - type: STR_MAGNUM_DRUM
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
+    damageAlter:
+      ArmorEffectiveness: 1.2
+  - type: STR_MAGNUM_AA_DRUM
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
+    damageAlter:
+      ArmorEffectiveness: 1.2
+  - type: STR_SMG
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CONCEALABLE, STR_LAND]
+    accuracyCloseQuarters: 125
+    sprayWaypoints: 2
+  - type: STR_SMG_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
+  - type: STR_SMG_AA_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
+  - type: STR_GRENADE_LAUNCHER
+    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_INCENDIARIES, STR_INCAPACITATE, STR_SMOKE, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_LAND]
+    accuracyCloseQuarters: 80
+    experienceTrainingMode: 4
+  - type: STR_LAUNCHER_FRAG
+    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
+    damageAlter:
+      IgnoreOverKill: false
+  - type: STR_LAUNCHER_INC
+    categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_CLIPS, STR_LAND]
+    damageAlter:
+      RandomType: 2
+      ToMorale: 15.0
+      ToTime: 0.3
+      IgnoreOverKill: false
+  - type: STR_LAUNCHER_SMOKE
+    categories: [STR_HUMAN_TECH, STR_SMOKE, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_CLIPS, STR_LAND]
+  - type: STR_LAUNCHER_ELERIUM
+    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_LAND]
+    damageAlter:
+      IgnoreOverKill: false
+  - type: STR_LMG
+    accuracyCloseQuarters: 44
+    tuLoad: 25
+    blockBothHands: true
+    sprayWaypoints: 2
+  - type: STR_LMG_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_MACHINE_GUNS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
+    damageAlter:
+      ArmorEffectiveness: 0.8
+  - type: STR_LMG_AA_CLIP
+    categories: [STR_XCOM_TECH, STR_FIREARMS, STR_MACHINE_GUNS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
+    damageAlter:
+      ArmorEffectiveness: 0.8
+  - type: STR_LIGHT_MINIGUN
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS, STR_LAND]
+    accuracyCloseQuarters: 45
+    accuracyAuto: 16
+    tuLoad: 25
+    blockBothHands: true
+    sprayWaypoints: 2
+    kneelBonus: 200
+  - type: STR_LIGHT_MINIGUN_CLIP
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS, STR_CLIPS, STR_LAND]
+    damageAlter:
+      ToArmorPre: 0.05
+  - type: STR_LIGHT_MINIGUN_AA_CLIP
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS, STR_CLIPS, STR_LAND]
+    damageAlter:
+      ToArmorPre: 0.05
+  - type: STR_MINIGUN
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS, STR_LAND]
+    accuracyCloseQuarters: 33
+    accuracyAuto: 12
+    tuLoad: 30
+    blockBothHands: true
+    sprayWaypoints: 2
+    kneelBonus: 200
+  - type: STR_MINIGUN_CLIP
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS, STR_CLIPS, STR_LAND]
+    damageAlter:
+      ToArmorPre: 0.05
+  - type: STR_MINIGUN_AA_CLIP
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS, STR_CLIPS, STR_LAND]
+    damageAlter:
+      ToArmorPre: 0.05
+  - type: STR_SCATTER_LASER
+    categories: [STR_XCOM_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_LASER, STR_SPACE, STR_LAND]
+    damageAlter:
+      IgnoreOverKill: false
+      ToArmorPre: 0.05
+    accuracyCloseQuarters: 45
+    accuracyAuto: 22
+    blockBothHands: true
+    sprayWaypoints: 2
+    kneelBonus: 200
+  - type: STR_ELERIUM_115
+    categories: [STR_COMPONENTS, STR_CLIPS, STR_LAND]
+  - type: STR_HEALING_SPRAY
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    medikitTargetSelf: true
+    isConsumable: true
+    medikitType: 1
+    costUse:
+      time: 10
+      morale: -5
+  - type: STR_PAINKILLER
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    medikitTargetSelf: true
+    isConsumable: true
+    medikitType: 3
+    costUse:
+      time: 10
+      morale: -5
+  - type: STR_STIMS
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_LABOR, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    medikitTargetSelf: true
+    isConsumable: true
+    medikitType: 2

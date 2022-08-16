@@ -1,6 +1,8 @@
 ﻿extraSounds:
   - type: BATTLE.CAT
     files:
+      70: Resources/Weapons_Compilation/WeaponSounds/Heavy_hit.wav
+      73: Resources/Races_Compilation/CerebrealRace/CerebrealBlast.wav
       76: Resources/Weapons_Compilation/WeaponSounds/HumanRifleFire.wav
       77: Resources/Weapons_Compilation/WeaponSounds/HumanBulletHit.wav
       80: Resources/Weapons_Compilation/WeaponSounds/HumanCannonFire.wav
@@ -17,7 +19,7 @@
       95: Resources/Doge/DogeAttack3.wav
       100: Resources/Weapons_Compilation/WeaponSounds/ClubHit.wav
       101: Resources/Weapons_Compilation/WeaponSounds/StabHit.wav
-      108: Resources/Races_Compilation/SectopodRace/SECTOPOD_MOVE.ogg
+      109: Resources/Races_Compilation/SectopodRace/SECTOPOD_MOVE.ogg
       113: Resources/Weapons_Compilation/WeaponSounds/Ex_Fire.wav
       180: Resources/Races_Compilation/SectopodRace/SECTOPOD_MOVE.ogg
       186: Resources/Weapons_Compilation/WeaponSounds/LaserRepeaterFire.wav
