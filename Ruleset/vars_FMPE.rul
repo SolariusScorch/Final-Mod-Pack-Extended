@@ -1,0 +1,76 @@
+﻿difficultyDemigod: true
+turnAIUseGrenade: 1
+turnAIUseBlaster: 1
+maxViewDistance: 40
+extraNerdyPediaInfoType: 2
+pediaReplaceCraftFuelWithRangeType: 2
+buildInfiltrationBaseCloseToTheCountry: true
+stunningImprovesMorale: true
+enableNewResearchSorting: true
+# maxLookVariant: 15
+showDogfightDistanceInKm: true
+crewEmergencyEvacuationSurvivalChance: 97
+# surrenderMode: 2
+noLOSAccuracyPenaltyGlobal: 50
+oneHandedPenaltyGlobal: 50
+tooMuchSmokeThreshold: 13
+displayCustomCategories: 1
+statisticalBulletConservation: true
+# enableCloseQuartersCombat: 1
+# closeQuartersAccuracyGlobal: 100
+# closeQuartersTuCostGlobal: 0
+# closeQuartersEnergyCostGlobal: 5
+# closeQuartersSneakUpGlobal: 50
+# drawEnemyRadarCircles: 2
+# escortRange: 50
+lighting:
+  enhanced: 7
+recommendedUserOptions:
+  battleExplosionHeight: 2
+  battleUFOExtenderAccuracy: true
+  globeSeasons: true
+  alienBleeding: true
+  canSellLiveAliens: true
+  showAllCommendations: false
+  battleInstantGrenade: false
+  retainCorpses: false
+  allowPsiStrengthImprovement: false
+  bleedingIndicator: true
+  autoSell: true
+  storageLimitsEnforced: true
+  oxcePlayBriefingMusicDuringEquipment: true
+  oxceEnableOffCentreShooting: true
+  strafe: true
+  forceFire: true
+  noAlienPanicMessages: true
+  oxceHighlightNewTopics: true
+  weaponSelfDestruction: false
+  battleAutoEnd: true
+  oxceAutoSell: true
+  anytimePsiTraining: true
+  craftLaunchAlways: true
+  canTransferCraftsWhileAirborne: true
+  showMoreStatsInInventoryView: true
+  battleHairBleach: true
+  soldierDiaries: true
+  allowPsionicCapture: true
+### bughunt stuff: ###
+bughuntMinTurn: 20
+bughuntMaxEnemies: 3
+bughuntRank: 0 # commanders are VIPs
+bughuntLowMorale: 0
+bughuntTimeUnitsLeft: 65
+### agent hierarchy: ###
+soldiersPerSergeant: 5
+soldiersPerCaptain: 11
+soldiersPerColonel: 23
+soldiersPerCommander: 30
+# mana:
+#   enabled: true
+#   battleUI: true
+#   trainingPrimary: true
+#   trainingSecondary: true
+#   replenishAfterMission: false
+constants:
+  extendedTerrainMelee: 4
+#  extendedUnderwaterThrowFactor: 60

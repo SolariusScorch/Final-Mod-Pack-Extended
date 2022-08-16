@@ -1,0 +1,7 @@
+name: "Final Mod Pack Extended"
+version: "1.0"
+requiredExtendedVersion: "7.6.3"
+author: "Solarius Scorch"
+description: "A companion submod to Final Mod Pack, enabling some OXCE functions. Works only with OXCE!"
+id: final-mod-pack-extended
+master: xcom1

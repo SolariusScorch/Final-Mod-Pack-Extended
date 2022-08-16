@@ -1,0 +1,54 @@
+soldiers:
+  - type: STR_SOLDIER
+    costBuy: 40000
+    costSalary: 15000
+    costSalarySquaddie: 5000 # squaddie salary 20000
+    costSalarySergeant: 10000 # sergeant salary 25000
+    costSalaryCaptain: 20000 # captain salary 35000
+    costSalaryColonel: 40000 # colonel salary 55000
+    costSalaryCommander: 70000 # commander salary 85000
+    minStats:
+      tu: 50
+      stamina: 40
+      health: 25
+      bravery: 10
+      reactions: 30
+      firing: 40
+      throwing: 50
+      strength: 20
+      psiStrength: 0
+      psiSkill: 0
+      melee: 20
+    maxStats:
+      tu: 60
+      stamina: 70
+      health: 40
+      bravery: 60
+      reactions: 60
+      firing: 70
+      throwing: 80
+      strength: 40
+      psiStrength: 100
+      psiSkill: 16
+      melee: 70
+    statCaps:
+      tu: 80
+      stamina: 100
+      health: 60
+      bravery: 100
+      reactions: 100
+      firing: 120
+      throwing: 120
+      strength: 70
+      psiStrength: 100
+      psiSkill: 100
+      melee: 120
+    armor: STR_NONE_UC
+    avatarOffsetX: 68
+    avatarOffsetY: 48
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 25
+    soldierNames:
+      - delete
+      - AgentName/
