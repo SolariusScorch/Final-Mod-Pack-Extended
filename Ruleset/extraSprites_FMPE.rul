@@ -71,6 +71,47 @@
     files:
       0: Resources/UI/GUI_Soldiers.png
 
+  - type: DayNightIndicator
+    width: 72
+    height: 24
+    subX: 24
+    subY: 24
+    files:
+      0: Resources/UI/Mun.png
+
+  - type: BigBurnIndicator
+    singleImage: true
+    files:
+      0: Resources/UI/burning.png
+  - type: BigStunIndicator
+    singleImage: true
+    files:
+      0: Resources/UI/Zzz.png
+  - type: BigWoundIndicator
+    singleImage: true
+    files:
+      0: Resources/UI/Bleed.png
+  - type: BigShockIndicator
+    singleImage: true
+    files:
+      0: Resources/UI/Shock.png
+  - type: FloorBurnIndicator
+    singleImage: true
+    files:
+      0: Resources/UI/burning.png
+  - type: FloorStunIndicator
+    singleImage: true
+    files:
+      0: Resources/UI/Zzz.png
+  - type: FloorWoundIndicator
+    singleImage: true
+    files:
+      0: Resources/UI/Bleed.png
+  - type: FloorShockIndicator
+    singleImage: true
+    files:
+      0: Resources/UI/Shock.png
+
   - type: Flag0
     singleImage: true
     files:
