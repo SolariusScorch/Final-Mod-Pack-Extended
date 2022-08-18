@@ -1,4 +1,5 @@
 ﻿armors:
+  - delete: STR_CHRYSSALID_ARMOR
   - delete: STR_OBLITERATOR_ARMOR
   - delete: STR_ETHEREAL_ARMOR_WHITE
   - delete: STR_ETHEREAL_ARMOR_WHITE2
@@ -23,11 +24,13 @@
   - delete: STR_MUTON_SHADER_ARMOR
   - delete: STR_SECTOID_STANDARD_ARMOR
   - delete: STR_SECTOID_COMMANDER_ARMOR
-  - delete: STR_SECTOID_ARMOR_HEAVY
+  - delete: STR_SECTOID_GUARDIAN_ARMOR
   - delete: STR_FLOATER_SOLDIER_ARMOR
   - delete: STR_FLOATER_ARMOR_GREEN
   - delete: STR_FLOATER_ARMOR_BLUE
   - delete: STR_FLOATER_ARMOR_WHITE
+  - delete: STR_FLOATER_LEADER_ARMOR
+  - delete: STR_FLOATER_COMMANDER_ARMOR
   - delete: STR_SNAKEMAN_SOLDIER_ARMOR
   - delete: STR_SNAKEMAN_ARMOR_GREEN
   - delete: STR_SNAKEMAN_ARMOR_BLUE
@@ -99,6 +102,61 @@
   - delete: STR_HOVERTANK_ARMOR
   - delete: STR_SECTOPOD_LASER_ARMOR
   - delete: STR_SECTOPOD_PLASMA_ARMOR
+  - type: STR_CHRYSSALID_ARMOR
+    spriteSheet: CHRYS.PCK
+    spriteInv: inventory_CHRYSSALID
+    allowInv: false
+    corpseBattle:
+      - STR_CHRYSSALID_CORPSE
+    visibilityAtDark: 25
+    heatVision: 45
+    psiVision: 6
+    camouflageAtDay: 30
+    camouflageAtDark: -2
+    frontArmor: 34
+    sideArmor: 34
+    rearArmor: 34
+    underArmor: 34
+    psiDefence: &StandardDynamicPsiDefence
+      psiStrength: 1.0
+      psiSkill: 0.4
+      moraleCurrent: 0.33
+      bravery: 0.2
+    drawingRoutine: 7
+    recovery:
+      mana:
+        flatHundred: 0.1
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    meleeDodge:
+      reactions: 0.5
+    meleeDodgeBackPenalty: 0.4
+    overKill: 1.5
+    allowsRunning: true
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.8
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.9
+      - 1.0
+      - 1.0
+      - 0.5
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 9.99
+      - 1.0
+    loftempsSet: [ 3 ]
   - type: STR_OBLITERATOR_ARMOR
     spriteSheet: OBLITERATOR.PCK
     spriteInv: inventory_OBLITERATOR
@@ -158,11 +216,7 @@
     sideArmor: 18
     rearArmor: 18
     underArmor: 18
-    psiDefence: &StandardDynamicPsiDefence
-      psiStrength: 1.0
-      psiSkill: 0.4
-      moraleCurrent: 0.33
-      bravery: 0.2
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 1
     drawingRoutine: 4
     recovery:
@@ -1005,8 +1059,9 @@
     specialWeapon: STR_UNARMED_MUTON
     loftempsSet: [ 3 ]
   - type: STR_MUTON_ARMOR_MEDIC
-    spriteInv: mutonmedicInventoryImage
     spriteSheet: MUTMED.PCK
+    spriteInv: mutonmedicInventoryImage
+    ufopediaType: STR_MUTON_SOLDIER_ARMOR
     corpseBattle:
       - STR_MUTMED_CORPSE
     corpseGeo: STR_MUTON_CORPSE
@@ -1040,6 +1095,7 @@
   - type: STR_MUTON_SHADER_ARMOR
     spriteSheet: MUTON_SHADER.PCK
     spriteInv: inventory_MUTON_SHADER
+    ufopediaType: STR_MUTON_SOLDIER_ARMOR
     corpseBattle:
       - STR_MUTON_SHADER_CORPSE
     corpseGeo: STR_MUTON_CORPSE
@@ -1120,8 +1176,9 @@
       - 1.0
     loftempsSet: [ 2 ]
   - type: STR_SECTOID_COMMANDER_ARMOR
-    spriteInv: sectoidcommanderInventoryImage
     spriteSheet: SECTCOM.PCK
+    spriteInv: sectoidcommanderInventoryImage
+    ufopediaType: STR_SECTOID_STANDARD_ARMOR
     corpseBattle:
       - STR_SECTOID_COMMANDER_CORPSE
     corpseGeo: STR_SECTOID_CORPSE
@@ -1151,7 +1208,7 @@
     allowsRunning: true
     damageModifier: *SectoidResists
     loftempsSet: [ 2 ]
-  - type: STR_SECTOID_ARMOR_HEAVY
+  - type: STR_SECTOID_GUARDIAN_ARMOR
     spriteInv: sectoidguardianInventoryImage
     spriteSheet: SECTARM.PCK
     corpseBattle:
@@ -1247,8 +1304,9 @@
     specialWeapon: STR_UNARMED_FLOATER
     loftempsSet: [ 3 ]
   - type: STR_FLOATER_ARMOR_GREEN
-    spriteInv: floaterInventoryImage
     spriteSheet: FLOATER_GREEN.PCK
+    spriteInv: floaterInventoryImage
+    ufopediaType: STR_FLOATER_SOLDIER_ARMOR
     corpseBattle:
       - STR_FLOATENG_CORPSE
     corpseGeo: STR_FLOATER_CORPSE
@@ -1280,8 +1338,9 @@
     specialWeapon: STR_UNARMED_FLOATER
     loftempsSet: [ 3 ]
   - type: STR_FLOATER_ARMOR_BLUE
-    spriteInv: floaterInventoryImage
     spriteSheet: FLOATER_BLUE.PCK
+    spriteInv: floaterInventoryImage
+    ufopediaType: STR_FLOATER_SOLDIER_ARMOR
     corpseBattle:
       - STR_FLOATNAV_CORPSE
     corpseGeo: STR_FLOATER_CORPSE
@@ -1313,8 +1372,9 @@
     specialWeapon: STR_UNARMED_FLOATER
     loftempsSet: [ 3 ]
   - type: STR_FLOATER_ARMOR_WHITE
-    spriteInv: floaterInventoryImage
     spriteSheet: FLOATER_WHITE.PCK
+    spriteInv: floaterInventoryImage
+    ufopediaType: STR_FLOATER_SOLDIER_ARMOR
     corpseBattle:
       - STR_FLOATMED_CORPSE
     corpseGeo: STR_FLOATER_CORPSE
@@ -1324,6 +1384,74 @@
     sideArmor: 6
     rearArmor: 4
     underArmor: 12
+    psiDefence: *StandardDynamicPsiDefence
+    drawingRoutine: 1
+    movementType: 1
+    recovery:
+      mana:
+        flatHundred: 0.1
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    meleeDodge:
+      reactions: 0.4
+    meleeDodgeBackPenalty: 0.5
+    overKill: 1.5
+    damageModifier: *FloaterResists
+    specialWeapon: STR_UNARMED_FLOATER
+    loftempsSet: [ 3 ]
+  - type: STR_FLOATER_LEADER_ARMOR
+    spriteSheet: FLOATLEA.PCK
+    spriteInv: floatercommanderInventoryImage
+    ufopediaType: STR_FLOATER_SOLDIER_ARMOR
+    corpseBattle:
+      - STR_FLOATLEA_CORPSE
+    corpseGeo: STR_FLOATER_CORPSE
+    visibilityAtDark: 20
+    heatVision: 40
+    frontArmor: 16
+    sideArmor: 12
+    rearArmor: 8
+    underArmor: 12
+    psiDefence: *StandardDynamicPsiDefence
+    drawingRoutine: 1
+    movementType: 1
+    recovery:
+      mana:
+        flatHundred: 0.1
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    meleeDodge:
+      reactions: 0.4
+    meleeDodgeBackPenalty: 0.5
+    overKill: 1.5
+    damageModifier: *FloaterResists
+    specialWeapon: STR_UNARMED_FLOATER
+    loftempsSet: [ 3 ]
+  - type: STR_FLOATER_COMMANDER_ARMOR
+    spriteSheet: FLOATCOM.PCK
+    spriteInv: floatercommanderInventoryImage
+    ufopediaType: STR_FLOATER_SOLDIER_ARMOR
+    corpseBattle:
+      - STR_FLOATCOM_CORPSE
+    corpseGeo: STR_FLOATER_CORPSE
+    visibilityAtDark: 20
+    heatVision: 40
+    frontArmor: 24
+    sideArmor: 18
+    rearArmor: 12
+    underArmor: 16
     psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 1
     movementType: 1
@@ -1397,8 +1525,9 @@
     specialWeapon: STR_SNAKE_BITE
     loftempsSet: [ 3 ]
   - type: STR_SNAKEMAN_ARMOR_GREEN
-    spriteInv: inventory_SNAKEMAN_ENGINEER
     spriteSheet: SNAKEMANENG.PCK
+    spriteInv: inventory_SNAKEMAN_ENGINEER
+    ufopediaType: STR_SNAKEMAN_SOLDIER_ARMOR
     corpseBattle:
       - STR_SNAKEMAN_ENGINEER_CORPSE
     corpseGeo: STR_SNAKEMAN_CORPSE
@@ -1433,8 +1562,9 @@
     specialWeapon: STR_SNAKE_BITE
     loftempsSet: [ 3 ]
   - type: STR_SNAKEMAN_ARMOR_BLUE
-    spriteInv: inventory_SNAKEMAN_NAVIGATOR
     spriteSheet: SNAKEMANNAV.PCK
+    spriteInv: inventory_SNAKEMAN_NAVIGATOR
+    ufopediaType: STR_SNAKEMAN_SOLDIER_ARMOR
     corpseBattle:
       - STR_SNAKEMAN_NAVIGATOR_CORPSE
     corpseGeo: STR_SNAKEMAN_CORPSE
@@ -1469,8 +1599,9 @@
     specialWeapon: STR_SNAKE_BITE
     loftempsSet: [ 3 ]
   - type: STR_SNAKEMAN_LEADER_ARMOR
-    spriteInv: inventory_SNAKEMAN_LEADER
     spriteSheet: SNAKEMANLEA.PCK
+    spriteInv: inventory_SNAKEMAN_LEADER
+    ufopediaType: STR_SNAKEMAN_SOLDIER_ARMOR
     corpseBattle:
       - STR_SNAKEMAN_LEADER_CORPSE
     corpseGeo: STR_SNAKEMAN_CORPSE
@@ -1492,8 +1623,9 @@
       - 0.0
     loftempsSet: [ 3 ]
   - type: STR_SNAKEMAN_COMMANDER_ARMOR
-    spriteInv: inventory_SNAKEMAN_COMMANDER
     spriteSheet: SNAKEMANCOM.PCK
+    spriteInv: inventory_SNAKEMAN_COMMANDER
+    ufopediaType: STR_SNAKEMAN_SOLDIER_ARMOR
     corpseBattle:
       - STR_SNAKEMAN_COMMANDER_CORPSE
     corpseGeo: STR_SNAKEMAN_CORPSE
@@ -2702,6 +2834,7 @@
   - type: STR_ANTHROPOD_NAVIGATOR_ARMOR
     spriteSheet: ANTHROPOD.PCK
     spriteInv: inventory_ANTHROPOD
+    ufopediaType: STR_ANTHROPOD_SOLDIER_ARMOR
     corpseBattle:
       - STR_ANTHROPOD_CORPSE
     visibilityAtDark: 20
@@ -2744,6 +2877,7 @@
   - type: STR_ANTHROPOD_ENGINEER_ARMOR
     spriteSheet: ANTHROPOD.PCK
     spriteInv: inventory_ANTHROPOD
+    ufopediaType: STR_ANTHROPOD_SOLDIER_ARMOR
     corpseBattle:
       - STR_ANTHROPOD_CORPSE
     visibilityAtDark: 20
@@ -2830,6 +2964,7 @@
     spriteSheet: SPITTER_RETRACT.PCK
     spriteInv: inventory_SPITTER
     allowInv: false
+    ufopediaType: STR_SPITTER_ARMOR
     corpseBattle:
       - STR_SPITTER_RETRACT_CORPSE
     corpseGeo: STR_SPITTER_CORPSE
@@ -2874,6 +3009,7 @@
     spriteSheet: SPITTER_RETRES.PCK
     spriteInv: inventory_SPITTER
     allowInv: false
+    ufopediaType: STR_SPITTER_ARMOR
     corpseBattle:
       - STR_SPITTER_RETRES_CORPSE
     corpseGeo: STR_SPITTER_CORPSE
@@ -2919,6 +3055,7 @@
     spriteSheet: SPITTER_NAKED.PCK
     spriteInv: inventory_SPITTER
     allowInv: false
+    ufopediaType: STR_SPITTER_ARMOR
     corpseBattle:
       - STR_SPITTER_NAKED_CORPSE
     corpseGeo: STR_SPITTER_CORPSE
@@ -2963,6 +3100,7 @@
     spriteSheet: MIBTANKS.PCK
     spriteInv: inventory_TANK_CANNON
     allowInv: false
+    ufopediaType: STR_TANK_ARMOR
     corpseBattle:
       - MIBTANK_CORPSE_1
       - MIBTANK_CORPSE_2
@@ -4743,6 +4881,7 @@
   - type: STR_REPTOID_LEADER_ARMOR
     spriteSheet: REPTOID.PCK
     spriteInv: inventory_REPTOID
+    ufopediaType: STR_REPTOID_STANDARD_ARMOR
     corpseBattle:
       - STR_REPTOID_CORPSE
     visibilityAtDark: 20
@@ -4777,6 +4916,7 @@
   - type: STR_REPTOID_COMMANDER_ARMOR
     spriteSheet: REPTOID.PCK
     spriteInv: inventory_REPTOID
+    ufopediaType: STR_REPTOID_STANDARD_ARMOR
     corpseBattle:
       - STR_REPTOID_CORPSE
     visibilityAtDark: 20
@@ -4957,6 +5097,7 @@
   - type: STR_GAZER_LEADER_ARMOR
     spriteSheet: GAZER.PCK
     spriteInv: inventory_GAZER
+    ufopediaType: STR_GAZER_STANDARD_ARMOR
     corpseBattle:
       - STR_GAZER_CORPSE
     visibilityAtDark: 20
@@ -4980,6 +5121,7 @@
   - type: STR_GAZER_COMMANDER_ARMOR
     spriteSheet: GAZER.PCK
     spriteInv: inventory_GAZER
+    ufopediaType: STR_GAZER_STANDARD_ARMOR
     corpseBattle:
       - STR_GAZER_CORPSE
     visibilityAtDark: 20
