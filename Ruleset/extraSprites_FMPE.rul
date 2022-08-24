@@ -1733,9 +1733,24 @@
     fileSingle: Resources/Armors_Compilation/JumpSuit/Inventory/Jumpsuit_M_big.png
   - typeSingle: HUMAN_AGENT__7__JUMPSUIT_F
     fileSingle: Resources/Armors_Compilation/JumpSuit/Inventory/Jumpsuit_F.png
+# Jumpsuit sepia
+  - typeSingle: HUMAN_AGENT__7__JUMPSUIT_SEPIA_M
+    fileSingle: Resources/Armors_Compilation/JumpSuit/Inventory-sepia/Jumpsuit_M.png
+  - typeSingle: HUMAN_AGENT__7__JUMPSUIT_SEPIA_M_BIG
+    fileSingle: Resources/Armors_Compilation/JumpSuit/Inventory-sepia/Jumpsuit_M_big.png
+  - typeSingle: HUMAN_AGENT__7__JUMPSUIT_SEPIA_F
+    fileSingle: Resources/Armors_Compilation/JumpSuit/Inventory-sepia/Jumpsuit_F.png
 # Grav Module
   - typeSingle: HUMAN_AGENT__8__GRAV_MODULE
     fileSingle: Resources/Armors_Compilation/GravModule/Inventory/Grav_Module.png
+# Armored Vest
+  - typeSingle: HUMAN_AGENT__8__ARMORED_VEST
+    fileSingle: Resources/Armors_Compilation/Armored_Vest/Inventory/ArmoredVest.png
+# Armored Vest Helmet
+  - typeSingle: HUMAN_AGENT__14__GREEN_HELMET
+    fileSingle: Resources/Armors_Compilation/Armored_Vest/Inventory/GreenHelmet.png
+  - typeSingle: HUMAN_AGENT__14__GREEN_HELMET_WIDE
+    fileSingle: Resources/Armors_Compilation/Armored_Vest/Inventory/GreenHelmet_Wide.png
 # Personal Armor
   - typeSingle: HUMAN_AGENT__7__PERSONAL_ARMOR_M
     fileSingle: Resources/Armors_Compilation/PersonalArmor/Inventory/Personal_Armor_M.png
@@ -1765,6 +1780,11 @@
     fileSingle: Resources/Armors_Compilation/FlyingSuit/Inventory/Flying_Suit.png
   - typeSingle: HYBRID_AGENT__7__FLYING_SUIT
     fileSingle: Resources/Armors_Compilation/FlyingSuit/Inventory/Flying_Suit.png
+# Synthsuit
+  - typeSingle: HUMAN_AGENT__7__SYNTHSUIT_M
+    fileSingle: Resources/Armors_Compilation/Synthsuit/Inventory/Synthsuit_M.png
+  - typeSingle: HUMAN_AGENT__7__SYNTHSUIT_F
+    fileSingle: Resources/Armors_Compilation/Synthsuit/Inventory/Synthsuit_F.png
 # Tritanium Vest
   - typeSingle: HUMAN_AGENT__8__TRITANIUM_VEST
     fileSingle: Resources/Armors_Compilation/Alloy_Vest/Inventory/TritaniumVest.png

@@ -1,7 +1,6 @@
 ﻿items:
   - delete: ALIEN_DRONE_WEAPON
   - delete: SPITTER_WEAPON
-  - delete: STR_MACHETE
   - type: STR_UNARMED_THUG
     weight: 0
     bigSprite: 100
