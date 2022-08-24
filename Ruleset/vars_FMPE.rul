@@ -16,11 +16,11 @@ oneHandedPenaltyGlobal: 50
 tooMuchSmokeThreshold: 13
 displayCustomCategories: 1
 statisticalBulletConservation: true
-# enableCloseQuartersCombat: 1
-# closeQuartersAccuracyGlobal: 100
-# closeQuartersTuCostGlobal: 0
-# closeQuartersEnergyCostGlobal: 5
-# closeQuartersSneakUpGlobal: 50
+enableCloseQuartersCombat: 1
+closeQuartersAccuracyGlobal: 100
+closeQuartersTuCostGlobal: 0
+closeQuartersEnergyCostGlobal: 5
+closeQuartersSneakUpGlobal: 50
 # drawEnemyRadarCircles: 2
 # escortRange: 50
 lighting:
