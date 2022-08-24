@@ -1805,6 +1805,3 @@
     fileSingle: Resources/Armors_Compilation/PersonalArmor/Inventory/BlackHeadgear.png
   - typeSingle: HUMAN_AGENT__11__BLACK_HEADGEAR_WIDE
     fileSingle: Resources/Armors_Compilation/PersonalArmor/Inventory/BlackHeadgear_wide.png
-# Dog nude
-  - typeSingle: DOGE_AGENT__2__M0_NUDE
-    fileSingle: Resources/Doge/inventory_DOGE.png
