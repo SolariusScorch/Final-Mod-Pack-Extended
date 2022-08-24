@@ -1,5 +1,4 @@
 ﻿items:
-  - delete: STR_SCOUT_DRONE
   - delete: ALIEN_DRONE_WEAPON
   - delete: SPITTER_WEAPON
   - delete: STR_MACHETE
@@ -1966,6 +1965,10 @@
     categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND, STR_CLIPS]
     damageAlter:
       IgnoreOverKill: false
+  - type: STR_SCOUT_DRONE
+    categories: [STR_HUMAN_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
+    compatibleAmmo:
+      - STR_SCOUT_DRONE_AMMO
   - type: STR_TANK_ROCKET_LAUNCHER
     categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
   - type: STR_HWP_ROCKETS

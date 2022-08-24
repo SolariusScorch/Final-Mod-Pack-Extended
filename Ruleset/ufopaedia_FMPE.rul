@@ -1,0 +1,8 @@
+﻿ufopaedia:
+  - delete: STR_SCOUT_DRONE
+  - id: STR_SCOUT_DRONE
+    type_id: 3
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    text: STR_SCOUT_DRONE_UFOPEDIA
+    weapon: STR_SCOUT_DRONE_SHOTGUN
+    listOrder: 1190
