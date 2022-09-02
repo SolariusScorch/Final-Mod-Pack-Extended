@@ -23,6 +23,7 @@
       183: Resources/Doge/bigob_DOGE_TRACK.png
       200: Resources/Weapons_Compilation/HybridWeapons/bigob_DroneBulletWeapon.png
       203: Resources/Races_Compilation/ReptoidRace/Salamandron_Jaws.png
+      211: Resources/Tanks_Compilation/XComCyberdisc/Cyberdisc_weapon_laser.png
       258: Resources/Weapons_Compilation/NaturalWeapons/bigob_GreenBlob.png
       260: Resources/Races_Compilation/CerebrealRace/bigob_PsiBlast.png
       400: Resources/UI/Blanks/bigob_Blank.png
@@ -47,6 +48,25 @@
       560: Resources/Weapons_Compilation/Projectiles/PsiBeam_bullet.png #16
       700: Resources/Weapons_Compilation/Projectiles/BlueLaser_bullet.png #20
       735: Resources/Weapons_Compilation/Projectiles/BlueHeavyLaser_bullet.png #21
+      840: Resources/Weapons_Compilation/Projectiles/Fireball_bullet.png #24
+      945: Resources/Weapons_Compilation/Projectiles/PurpleHeavyLaser_bullet.png #27
+
+  - type: X1.PCK
+    width: 1024
+    height: 64
+    subX: 128
+    subY: 64
+    files:
+      88: Resources/Weapons_Compilation/ExplosionAnimations/Grey_Skull_exp.png
+
+  - type: HIT.PCK
+    height: 40
+    width: 128
+    subX: 32
+    subY: 40
+    files:
+      4: Resources/Weapons_Compilation/MeleeAnimations/StunRod.png
+      12: Resources/Weapons_Compilation/MeleeAnimations/Claws.png
 
   - type: SMOKE.PCK
     height: 80
@@ -56,6 +76,7 @@
     files:
       76: Resources/Races_Compilation/CerebrealRace/PsiBeam_hit.png
       86: Resources/Weapons_Compilation/HitAnimations/BlueLaser_hit.png
+      206: Resources/Weapons_Compilation/HitAnimations/Sound_hit.png
 
   - type: SPICONS.DAT
     width: 32
@@ -1805,3 +1826,6 @@
     fileSingle: Resources/Armors_Compilation/PersonalArmor/Inventory/BlackHeadgear.png
   - typeSingle: HUMAN_AGENT__11__BLACK_HEADGEAR_WIDE
     fileSingle: Resources/Armors_Compilation/PersonalArmor/Inventory/BlackHeadgear_wide.png
+# Dog nude
+  - typeSingle: DOGE_AGENT__2__M0_NUDE
+    fileSingle: Resources/Doge/inventory_DOGE.png

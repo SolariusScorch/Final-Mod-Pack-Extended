@@ -1935,7 +1935,7 @@
   - type: STR_CEREBREAL_WEAPON
     categories: [STR_BUILT_INS]
     weight: 3
-    bigSprite: 992
+    bigSprite: 260
     floorSprite: 31
     handSprite: 104
     bulletSprite: 16
