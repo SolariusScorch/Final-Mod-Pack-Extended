@@ -5227,6 +5227,8 @@
     rearArmor: 130
     underArmor: 100
     zombiImmune: true
+    drawingRoutine: 2
+    constantAnimation: true
     movementType: 1
     size: 2
     overKill: 1.5
