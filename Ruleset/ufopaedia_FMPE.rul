@@ -6,3 +6,8 @@
     text: STR_SCOUT_DRONE_UFOPEDIA
     weapon: STR_SCOUT_DRONE_SHOTGUN
     listOrder: 1190
+  - id: STR_FIRE_EXTINGUISHER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_FIRE_EXTINGUISHER_UFOPEDIA
+    listOrder: 45680

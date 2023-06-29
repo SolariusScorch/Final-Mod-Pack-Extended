@@ -2794,3 +2794,64 @@
     medikitTargetSelf: true
     isConsumable: true
     medikitType: 2
+  - type: STR_FIRE_EXTINGUISHER
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_LAND]
+    size: 0.2
+    costBuy: 100
+    costSell: 50
+    weight: 9
+    bigSprite: 853
+    floorSprite: 763
+    handSprite: 128
+    bulletSprite: 1
+    fireSound: 64
+    explosionHitSound: 113
+    hitAnimation: 88
+    power: 40
+    accuracyAimed: 100
+    accuracyCloseQuarters: 115
+    tuAimed: 64
+    damageType: 9
+    damageAlter:
+      RandomType: 4
+      FixRadius: 2
+      ToStun: 0.6
+      ToTime: 0.4
+    battleType: 1
+    costThrow:
+      energy: 18
+    clipSize: 3
+    isFireExtinguisher: true
+    arcingShot: true
+    maxRange: 6
+    invWidth: 2
+    invHeight: 2
+    bulletSpeed: 80
+    kneelBonus: 100
+#Gun Butt segment
+    meleeHitSound: 109
+    meleeAnimation: 0
+    meleeType: 6
+    meleePower: 20
+    meleeBonus:
+      strength: 0.6
+    meleeAlter:
+      RandomType: 2
+      FixRadius: 0
+      IgnoreDirection: false
+      ArmorEffectiveness: 1.0
+      ToHealth: 0.5
+      ToTile: 0.25
+    accuracyMelee: 65
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    costMelee:
+      time: 16
+      energy: 6
+    flatMelee:
+      time: true
+    experienceTrainingMode: 16
+#Gun Butt segment end
+    attraction: 15
+    listOrder: 140950

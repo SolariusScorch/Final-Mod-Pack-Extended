@@ -34,10 +34,20 @@
       405: Resources/UI/Blanks/Null_Void_3x3.png
       406: Resources/UI/Blanks/Null_Void_2x3.png
       407: Resources/UI/Blanks/Null_Void_transparent_3x3.png
+      853: Resources/Misc_Items_Compilation/bigob_FireExtinguisher.png
 
   - type: FLOOROB.PCK
     files:
       93: Resources/Tanks_Compilation/Scoutdrone/floorob_SmokeLauncherClip.png
+      763: Resources/Misc_Items_Compilation/floorob_FireExtinguisher.png
+
+  - type: HANDOB.PCK
+    height: 40
+    width: 256
+    subX: 32
+    subY: 40
+    files:
+      128: Resources/Misc_Items_Compilation/handob_FireExtinguisher.png
 
   - type: Projectiles
     height: 3

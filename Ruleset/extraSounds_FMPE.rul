@@ -1,6 +1,7 @@
 ﻿extraSounds:
   - type: BATTLE.CAT
     files:
+      64: Resources/Weapons_Compilation/Flamethrower/Sounds/FlameThrower.wav
       70: Resources/Weapons_Compilation/WeaponSounds/Heavy_hit.wav
       73: Resources/Races_Compilation/CerebrealRace/CerebrealBlast.wav
       76: Resources/Weapons_Compilation/WeaponSounds/HumanRifleFire.wav
