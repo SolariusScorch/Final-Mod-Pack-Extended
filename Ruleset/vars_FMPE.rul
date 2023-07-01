@@ -74,3 +74,4 @@ soldiersPerCommander: 30
 constants:
   extendedTerrainMelee: 4
 #  extendedUnderwaterThrowFactor: 60
+  extendedExperienceAwardSystem: true
