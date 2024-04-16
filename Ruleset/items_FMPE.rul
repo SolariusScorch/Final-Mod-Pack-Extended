@@ -1217,6 +1217,60 @@
     invWidth: 2
     invHeight: 3
     armor: 20
+  - type: STR_HWP_SECTOPOD_GAUSS
+    categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
+    size: 6
+    costBuy: 0
+    costSell: 730000
+    transferTime: 96
+    bigSprite: 951
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 19
+    fireSound: 65
+    hitSound: 66
+    hitAnimation: 26
+    power: 100
+    damageType: 1
+    accuracySnap: 60
+    accuracyAimed: 100
+    tuSnap: 38
+    tuAimed: 75
+    bulletSpeed: 5
+    battleType: 1
+    fixedWeapon: true
+    clipSize: -1
+    invWidth: 2
+    invHeight: 3
+  - type: STR_HWP_SECTOPOD_RAILGUN
+    categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
+    size: 6
+    costBuy: 0
+    costSell: 730000
+    transferTime: 96
+    bigSprite: 950
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 18
+    fireSound: 96
+    hitSound: 66
+    hitAnimation: 96
+    power: 100
+    damageType: 1
+    accuracyAuto: 40
+    accuracySnap: 60
+    accuracyAimed: 100
+    tuAuto: 45
+    tuSnap: 35
+    tuAimed: 70
+    autoShots: 4
+    sprayWaypoints: 2
+    bulletSpeed: 5
+    battleType: 1
+    fixedWeapon: true
+    clipSize: -1
+    invWidth: 2
+    invHeight: 3
   - type: STR_HWP_RANGEFINDER
     weight: 0
     bigSprite: 140

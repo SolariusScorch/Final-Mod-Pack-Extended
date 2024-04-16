@@ -35,6 +35,8 @@
       406: Resources/UI/Blanks/Null_Void_2x3.png
       407: Resources/UI/Blanks/Null_Void_transparent_3x3.png
       853: Resources/Misc_Items_Compilation/bigob_FireExtinguisher.png
+      950: Resources/Tanks_Compilation/TankWeapons/bigob_SectopodRailgun.png
+      951: Resources/Tanks_Compilation/TankWeapons/bigob_SectopodGauss.png
 
   - type: FLOOROB.PCK
     files:
@@ -56,6 +58,8 @@
     subY: 3
     files:
       560: Resources/Weapons_Compilation/Projectiles/PsiBeam_bullet.png #16
+      630: Resources/Weapons_Compilation/Projectiles/MassDriver_bullet.png
+      665: Resources/Weapons_Compilation/Projectiles/Gauss_bullet.png
       700: Resources/Weapons_Compilation/Projectiles/BlueLaser_bullet.png #20
       735: Resources/Weapons_Compilation/Projectiles/BlueHeavyLaser_bullet.png #21
       840: Resources/Weapons_Compilation/Projectiles/Fireball_bullet.png #24
@@ -86,6 +90,7 @@
     files:
       76: Resources/Races_Compilation/CerebrealRace/PsiBeam_hit.png
       86: Resources/Weapons_Compilation/HitAnimations/BlueLaser_hit.png
+      96: Resources/GaussWeaponry/Gauss_hit.png
       206: Resources/Weapons_Compilation/HitAnimations/Sound_hit.png
 
   - type: SPICONS.DAT

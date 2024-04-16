@@ -2,6 +2,8 @@
   - type: BATTLE.CAT
     files:
       64: Resources/Weapons_Compilation/Flamethrower/Sounds/FlameThrower.wav
+      65: Resources/Weapons_Compilation/WeaponSounds/HeavyMassDriver_fire.wav
+      66: Resources/Weapons_Compilation/WeaponSounds/lashit.wav
       70: Resources/Weapons_Compilation/WeaponSounds/Heavy_hit.wav
       73: Resources/Races_Compilation/CerebrealRace/CerebrealBlast.wav
       76: Resources/Weapons_Compilation/WeaponSounds/HumanRifleFire.wav
@@ -18,6 +20,7 @@
       93: Resources/Doge/DogeAttack1.wav
       94: Resources/Doge/DogeAttack2.wav
       95: Resources/Doge/DogeAttack3.wav
+      96: Resources/Weapons_Compilation/WeaponSounds/HeavyRailgun.wav
       100: Resources/Weapons_Compilation/WeaponSounds/ClubHit.wav
       101: Resources/Weapons_Compilation/WeaponSounds/StabHit.wav
       109: Resources/Races_Compilation/SectopodRace/SECTOPOD_MOVE.ogg

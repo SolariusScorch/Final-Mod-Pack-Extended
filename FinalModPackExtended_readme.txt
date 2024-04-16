@@ -4,7 +4,7 @@ by: Solarius Scorch
 Nocturnal Productions
 
 CHANGELOG:
-1.1: New item: Fire Extinguisher.
+1.1: New item: Fire Extinguisher. New HWP armors: Sectopod Gauss and Railgun.
 1.0.8: Updated constants for OXCE 7.9.
 1.0.7: Fixed Laser Hovertank armor entry.
 1.0.6: Fixed some missing resources.

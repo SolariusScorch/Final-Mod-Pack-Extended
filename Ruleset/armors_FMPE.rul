@@ -100,6 +100,8 @@
   - delete: STR_SMALL_TANK_ARMOR
   - delete: STR_TANK_ARMOR
   - delete: STR_HOVERTANK_ARMOR
+  - delete: STR_SECTOPOD_GAUSS_ARMOR
+  - delete: STR_SECTOPOD_RAILGUN_ARMOR
   - delete: STR_SECTOPOD_LASER_ARMOR
   - delete: STR_SECTOPOD_PLASMA_ARMOR
   - type: STR_CHRYSSALID_ARMOR
@@ -5249,6 +5251,92 @@
       - 0.5
       - 0.0
       - 0.0
+    loftempsSet: [ 92, 89, 90, 91 ]
+  - type: STR_SECTOPOD_GAUSS_ARMOR
+    spriteSheet: SECTOPOD_GAUSS.PCK
+    spriteInv: inventory_X_SECTOPOD_GAUSS
+    allowInv: false
+    corpseBattle:
+      - SECTOPOD_CORPSE_1
+      - SECTOPOD_CORPSE_2
+      - SECTOPOD_CORPSE_3
+      - SECTOPOD_CORPSE_4
+    corpseGeo: STR_SECTOPOD_CORPSE
+    customArmorPreviewIndex: 31
+    visibilityAtDark: 20
+    heatVision: 80
+    frontArmor: 145
+    sideArmor: 130
+    rearArmor: 100
+    underArmor: 90
+    psiDefence: *MachineDynamicPsiDefence
+    fearImmune: true
+    bleedImmune: true
+    zombiImmune: true
+    moveSound: 109
+    drawingRoutine: 5
+    size: 2
+    overKill: 1.5
+    recovery:
+      energy:
+        energyRegen: 0.0
+        flatHundred: 1.00
+    allowsRunning: true
+    allowsKneeling: false
+    damageModifier: *SectopodResists
+    builtInWeapons:
+      - STR_HWP_SECTOPOD_GAUSS
+      - STR_HWP_RANGEFINDER
+      - INV_NULL_2X1_LEFT_SHOULDER
+      - INV_NULL_2X1_RIGHT_SHOULDER
+      - INV_NULL_2X1_LEFT_LEG
+      - INV_NULL_2X1_RIGHT_LEG
+      - INV_NULL_1X2_QD_SLOT
+      - INV_NULL_4X2_BELT
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 92, 89, 90, 91 ]
+  - type: STR_SECTOPOD_RAILGUN_ARMOR
+    spriteSheet: SECTOPOD_RAILGUN.PCK
+    spriteInv: inventory_X_SECTOPOD_RAILGUN
+    allowInv: false
+    corpseBattle:
+      - SECTOPOD_CORPSE_1
+      - SECTOPOD_CORPSE_2
+      - SECTOPOD_CORPSE_3
+      - SECTOPOD_CORPSE_4
+    corpseGeo: STR_SECTOPOD_CORPSE
+    customArmorPreviewIndex: 31
+    visibilityAtDark: 20
+    heatVision: 80
+    frontArmor: 145
+    sideArmor: 130
+    rearArmor: 100
+    underArmor: 90
+    psiDefence: *MachineDynamicPsiDefence
+    fearImmune: true
+    bleedImmune: true
+    zombiImmune: true
+    moveSound: 109
+    drawingRoutine: 5
+    size: 2
+    overKill: 1.5
+    recovery:
+      energy:
+        energyRegen: 0.0
+        flatHundred: 1.00
+    allowsRunning: true
+    allowsKneeling: false
+    damageModifier: *SectopodResists
+    builtInWeapons:
+      - STR_HWP_SECTOPOD_RAILGUN
+      - STR_HWP_RANGEFINDER
+      - INV_NULL_2X1_LEFT_SHOULDER
+      - INV_NULL_2X1_RIGHT_SHOULDER
+      - INV_NULL_2X1_LEFT_LEG
+      - INV_NULL_2X1_RIGHT_LEG
+      - INV_NULL_1X2_QD_SLOT
+      - INV_NULL_4X2_BELT
+      - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 92, 89, 90, 91 ]
   - type: STR_SECTOPOD_LASER_ARMOR
     spriteSheet: TANK2.PCK
