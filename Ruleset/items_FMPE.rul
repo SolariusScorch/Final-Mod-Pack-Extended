@@ -1124,7 +1124,7 @@ items:
       ToStun: 0.75
       RandomWound: false
       ToWound: 0.12
-      FireThreshold: 25.0
+      FireThreshold: 25
     accuracySnap: 75
     accuracyAimed: 110
     tuSnap: 30
@@ -1609,7 +1609,7 @@ items:
       ToStun: 0.75
       RandomWound: false
       ToWound: 0.12
-      FireThreshold: 25.0
+      FireThreshold: 25
       ToTile: 1.25
     damageBonus:
       strength: 0.1
@@ -1633,7 +1633,7 @@ items:
       ToStun: 0.75
       RandomWound: false
       ToWound: 0.12
-      FireThreshold: 25.0
+      FireThreshold: 25
       ToTile: 1.25
     damageBonus:
       strength: 0.3
@@ -1757,7 +1757,7 @@ items:
       ToStun: 0.75
       RandomWound: false
       ToWound: 0.12
-      FireThreshold: 25.0
+      FireThreshold: 25
     costThrow:
       energy: 6
   - type: STR_STUN_BOMB
@@ -1981,7 +1981,7 @@ items:
       ToStun: 0.75
       RandomWound: false
       ToWound: 0.12
-      FireThreshold: 25.0
+      FireThreshold: 25
   - type: STR_XCOM_CYBERDISC_LASER
     categories: [STR_ALIEN_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
     damageAlter:
@@ -2041,7 +2041,7 @@ items:
       ToStun: 0.75
       RandomWound: false
       ToWound: 0.12
-      FireThreshold: 25.0
+      FireThreshold: 25
   - type: STR_HOVERTANK_LASER_CANNON
     categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
     damageAlter:
@@ -2055,7 +2055,7 @@ items:
       ToStun: 0.75
       RandomWound: false
       ToWound: 0.12
-      FireThreshold: 25.0
+      FireThreshold: 25
   - type: STR_HOVERTANK_ROCKET_LAUNCHER
     categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
   - type: STR_HOVERTANK_LAUNCHER
@@ -2077,7 +2077,7 @@ items:
       ToStun: 0.75
       RandomWound: false
       ToWound: 0.12
-      FireThreshold: 25.0
+      FireThreshold: 25
   - type: STR_MULTI_LAUNCHER
     categories: [STR_XCOM_TECH, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_EXPLOSIVES, STR_SPACE, STR_LAND]
     accuracyCloseQuarters: 45
@@ -2130,7 +2130,7 @@ items:
       ToStun: 0.75
       RandomWound: false
       ToWound: 0.12
-      FireThreshold: 25.0
+      FireThreshold: 25
     shotgunBehavior: 1
     shotgunSpread: 50
   - type: STR_PLASMA_SNIPER_RIFLE
@@ -2152,7 +2152,7 @@ items:
       ToStun: 0.75
       RandomWound: false
       ToWound: 0.12
-      FireThreshold: 25.0
+      FireThreshold: 25
   - type: STR_PLASMA_DESTROYER
     categories: [STR_CANNONS, STR_PLASMA, STR_ALIEN_TECH, STR_SPACE, STR_LAND]
     accuracyCloseQuarters: 66
@@ -2174,7 +2174,7 @@ items:
       ToArmorPre: 0.15
       ToStun: 0.75
       RandomWound: false
-      FireThreshold: 25.0
+      FireThreshold: 25
       RandomType: 7
       ToTile: 0.75
   - type: STR_DART_RIFLE
@@ -2341,7 +2341,7 @@ items:
       ToStun: 0.75
       RandomWound: false
       ToWound: 0.12
-      FireThreshold: 25.0
+      FireThreshold: 25
   - type: STR_PLASMA_RIFLE
     categories: [STR_ALIEN_TECH, STR_PLASMA, STR_RIFLES, STR_SPACE, STR_LAND]
     accuracyCloseQuarters: 100
@@ -2356,7 +2356,7 @@ items:
       ToStun: 0.75
       RandomWound: false
       ToWound: 0.12
-      FireThreshold: 25.0
+      FireThreshold: 25
   - type: STR_HEAVY_PLASMA
     categories: [STR_ALIEN_TECH, STR_PLASMA, STR_HEAVY_WEAPONS, STR_RIFLES, STR_SPACE, STR_LAND]
     accuracyCloseQuarters: 95
@@ -2371,7 +2371,7 @@ items:
       ToStun: 0.75
       RandomWound: false
       ToWound: 0.12
-      FireThreshold: 25.0
+      FireThreshold: 25
   - type: STR_BLASTER_LAUNCHER
     categories: [STR_ALIEN_TECH, STR_EXPLOSIVES, STR_LAUNCHERS, STR_SPACE, STR_LAND]
     accuracyCloseQuarters: 60
