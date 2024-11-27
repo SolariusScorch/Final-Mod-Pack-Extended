@@ -1,4 +1,4 @@
-﻿items:
+items:
   - delete: ALIEN_DRONE_WEAPON
   - delete: SPITTER_WEAPON
   - type: STR_UNARMED_THUG

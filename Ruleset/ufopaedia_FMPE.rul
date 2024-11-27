@@ -1,4 +1,4 @@
-﻿ufopaedia:
+ufopaedia:
   - delete: STR_SCOUT_DRONE
   - id: STR_SCOUT_DRONE
     type_id: 3

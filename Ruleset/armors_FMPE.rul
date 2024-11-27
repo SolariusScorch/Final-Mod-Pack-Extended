@@ -1,4 +1,4 @@
-﻿armors:
+armors:
   - delete: STR_CHRYSSALID_ARMOR
   - delete: STR_OBLITERATOR_ARMOR
   - delete: STR_ETHEREAL_ARMOR_WHITE
