@@ -4,7 +4,7 @@ by: Solarius Scorch
 Nocturnal Productions
 
 CHANGELOG:
-: Fixed Gazer officers kneeling.
+1.2.1: Fixed Flamethrower sound. Fixed Gazer officers kneeling.
 1.2: Enemies can use proximity grenades now (with the newest OXCE). Minor fixes.
 1.1: New item: Fire Extinguisher. New HWP armors: Sectopod Gauss and Railgun.
 1.0.8: Updated constants for OXCE 7.9.

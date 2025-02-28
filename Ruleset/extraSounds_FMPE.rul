@@ -1,7 +1,7 @@
 extraSounds:
   - type: BATTLE.CAT
     files:
-      64: Resources/Weapons_Compilation/Flamethrower/Sounds/FlameThrower.wav
+      64: Resources/Weapons_Compilation/WeaponSounds/Flamethrower/Sounds/FlameThrower.wav
       65: Resources/Weapons_Compilation/WeaponSounds/HeavyMassDriver_fire.wav
       66: Resources/Weapons_Compilation/WeaponSounds/lashit.wav
       70: Resources/Weapons_Compilation/WeaponSounds/Heavy_hit.wav
