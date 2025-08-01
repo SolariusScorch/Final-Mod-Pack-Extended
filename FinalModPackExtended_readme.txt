@@ -4,6 +4,7 @@ by: Solarius Scorch
 Nocturnal Productions
 
 CHANGELOG:
+1.2.2: Sync with the new sprite for Ethereal Commander in FMP.
 1.2.1: Fixed Flamethrower sound. Fixed Gazer officers kneeling.
 1.2: Enemies can use proximity grenades now (with the newest OXCE). Minor fixes.
 1.1: New item: Fire Extinguisher. New HWP armors: Sectopod Gauss and Railgun.

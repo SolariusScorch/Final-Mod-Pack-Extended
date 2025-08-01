@@ -4233,8 +4233,8 @@ armors:
     damageModifier: *EtherealResists
     loftempsSet: [ 3 ]
   - type: STR_ETHEREAL_COMMANDER_ARMOR
-    spriteInv: etherealInventoryImage
-    spriteSheet: ETHEREAL.PCK
+    spriteSheet: ETHEREAL_COMMANDER.PCK
+    spriteInv: inventory_ETHEREAL_COMMANDER.SPK
     ufopediaType: STR_ETHEREAL_SOLDIER_ARMOR
     corpseBattle:
       - STR_ETHEREAL_CORPSE
