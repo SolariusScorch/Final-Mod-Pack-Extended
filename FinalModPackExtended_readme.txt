@@ -4,7 +4,7 @@ by: Solarius Scorch
 Nocturnal Productions
 
 CHANGELOG:
-: Streamlined accuracy formula for sniper rifles. Removed modifier to Auto-Cannon aimed range.
+1.3: Streamlined accuracy formula for sniper rifles. Removed modifier to Auto-Cannon aimed range.
 1.2.2: Sync with the new sprite for Ethereal Commander in FMP.
 1.2.1: Fixed Flamethrower sound. Fixed Gazer officers kneeling.
 1.2: Enemies can use proximity grenades now (with the newest OXCE). Minor fixes.
