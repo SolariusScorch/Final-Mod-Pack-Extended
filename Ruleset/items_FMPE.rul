@@ -2138,12 +2138,14 @@ items:
     accuracyCloseQuarters: 66
     accuracyMultiplier:
       firing: [0.0, 0.01]
+      bravery: 0.5
     snapRange: 30
   - type: STR_PLASMA_SNIPER_RIFLE_CLIP
     categories: [STR_SNIPER_RIFLES, STR_PLASMA, STR_ALIEN_TECH, STR_CLIPS, STR_SPACE, STR_LAND]
     power: 80
     damageBonus:
       firing: 0.2
+      bravery: 0.5
     damageAlter:
       RandomType: 7
       ArmorEffectiveness: 0.75
@@ -2305,6 +2307,7 @@ items:
     accuracyCloseQuarters: 80
     accuracyMultiplier:
       firing: [0.0, 0.01]
+      bravery: 0.5
     snapRange: 33
     dropoff: 3
   - type: STR_LASER_SHOTGUN
@@ -2473,6 +2476,7 @@ items:
     accuracyCloseQuarters: 80
     accuracyMultiplier:
       firing: [0.0, 0.01]
+      bravery: 0.5
   - type: STR_GAUSS_SNIPER_RIFLE_CLIP
     categories: [STR_XCOM_TECH, STR_MASS_DRIVER, STR_SNIPER_RIFLES, STR_CLIPS, STR_SPACE, STR_LAND]
     power: 70
@@ -2506,6 +2510,7 @@ items:
     accuracyCloseQuarters: 80
     accuracyMultiplier:
       firing: [0.0, 0.01]
+      bravery: 0.5
   - type: STR_RAIL_SNIPER_RIFLE_CLIP
     categories: [STR_XCOM_TECH, STR_MASS_DRIVER, STR_SNIPER_RIFLES, STR_CLIPS, STR_SPACE, STR_LAND]
     power: 120
@@ -2650,6 +2655,7 @@ items:
     accuracyAimed: 105
     accuracyMultiplier:
       firing: [0.0, 0.01]
+      bravery: 0.5
     snapRange: 40
     oneHandedPenalty: 25
   - type: STR_HEAVY_SNIPER_RIFLE_CLIP
