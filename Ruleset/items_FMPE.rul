@@ -2435,7 +2435,6 @@ items:
     accuracyCloseQuarters: 55
     sprayWaypoints: 2
     shotgunChoke: 80
-    aimRange: 22
   - type: STR_AC_AP_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
     damageAlter:
