@@ -2776,6 +2776,7 @@ items:
     damageAlter:
       IgnoreOverKill: false
   - type: STR_LMG
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS, STR_LAND]
     accuracyCloseQuarters: 44
     tuLoad: 25
     blockBothHands: true
