@@ -4,6 +4,7 @@ by: Solarius Scorch
 Nocturnal Productions
 
 CHANGELOG:
+1.4: Fixed paperdolls M56 and F45.
 1.3: Streamlined accuracy formula for sniper rifles. Removed modifier to Auto-Cannon aimed range. Added missing LMG categories.
 1.2.2: Sync with the new sprite for Ethereal Commander in FMP.
 1.2.1: Fixed Flamethrower sound. Fixed Gazer officers kneeling.
