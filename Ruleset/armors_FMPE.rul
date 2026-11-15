@@ -1215,7 +1215,7 @@ armors:
     loftempsSet: [ 3 ]
   - type: STR_FLOATER_ARMOR_GREEN
     spriteSheet: FLOATER_GREEN.PCK
-    spriteInv: floaterInventoryImage
+    spriteInv: floaterengineerInventoryImage.SPK
     ufopediaType: STR_FLOATER_SOLDIER_ARMOR
     corpseBattle:
       - STR_FLOATENG_CORPSE
@@ -1245,7 +1245,7 @@ armors:
     loftempsSet: [ 3 ]
   - type: STR_FLOATER_ARMOR_BLUE
     spriteSheet: FLOATER_BLUE.PCK
-    spriteInv: floaterInventoryImage
+    spriteInv: floaternavigatorInventoryImage.SPK
     ufopediaType: STR_FLOATER_SOLDIER_ARMOR
     corpseBattle:
       - STR_FLOATNAV_CORPSE
@@ -1275,7 +1275,7 @@ armors:
     loftempsSet: [ 3 ]
   - type: STR_FLOATER_ARMOR_WHITE
     spriteSheet: FLOATER_WHITE.PCK
-    spriteInv: floaterInventoryImage
+    spriteInv: floatermedicInventoryImage.SPK
     ufopediaType: STR_FLOATER_SOLDIER_ARMOR
     corpseBattle:
       - STR_FLOATMED_CORPSE
@@ -1305,7 +1305,7 @@ armors:
     loftempsSet: [ 3 ]
   - type: STR_FLOATER_LEADER_ARMOR
     spriteSheet: FLOATLEA.PCK
-    spriteInv: floatercommanderInventoryImage
+    spriteInv: floaterleaderInventoryImage.SPK
     ufopediaType: STR_FLOATER_SOLDIER_ARMOR
     corpseBattle:
       - STR_FLOATLEA_CORPSE
